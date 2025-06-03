@@ -169,7 +169,6 @@ class MainWindow:
         )
         developer_label.pack(side="right", padx=10)
 
-    # Os outros métodos continuam iguais...
     def _create_menu(self):
         """Cria o menu estilo Windows padrão"""
         menubar = Menu(self.root)
@@ -357,18 +356,33 @@ class MainWindow:
                 self._add_status(f"Encontrados {len(nfce_files)} arquivos NFC-e e {len(nfe_files)} arquivos NF-e")
                 
                 # Verificar se encontrou arquivos
-                all_files = nfce_files + nfe_files
-                if not all_files:
+                total_files = len(nfce_files) + len(nfe_files)
+                if total_files == 0:
                     self._add_status(f"Nenhum arquivo encontrado para o período {period}")
                     continue
                 
-                # Compactar arquivos
-                self._add_status(f"Compactando {len(all_files)} arquivos...")
+                # CORREÇÃO PRINCIPAL: Passar o dicionário organizado para manter separação por tipo
+                self._add_status(f"Compactando {total_files} arquivos organizados por tipo (NFCe e NFe em pastas separadas)...")
                 
                 zip_path = f"temp/{doc_id}_{period_formatted}_xmls.zip"
                 os.makedirs("temp", exist_ok=True)
                 
-                compressed_path = zip_service.compress_files(all_files, zip_path)
+                # IMPORTANTE: Usar dicionário organizado em vez de lista simples
+                files_organized = {
+                    'nfce': nfce_files,  # Lista de arquivos NFCe
+                    'nfe': nfe_files     # Lista de arquivos NFe
+                }
+                
+                # Usar organize_by_type=True para criar estrutura de pastas
+                compressed_path = zip_service.compress_files(
+                    files_organized,      # Dicionário organizado
+                    zip_path,            # Caminho do ZIP
+                    organize_by_type=True # CRUCIAL: Garante organização em pastas
+                )
+                
+                self._add_status(f"ZIP criado com estrutura organizada:")
+                self._add_status(f"  - Pasta NFCe/: {len(nfce_files)} arquivo(s)")
+                self._add_status(f"  - Pasta NFe/: {len(nfe_files)} arquivo(s)")
                 
                 # Preparar informações para o email
                 company_info = {
@@ -394,6 +408,10 @@ class MainWindow:
                 Empresa: {self.company_var.get()}
                 CNPJ: {self.document_id_var.get()}
                 
+                Os arquivos estão organizados em pastas separadas dentro do arquivo ZIP:
+                - Pasta NFCe/: {len(nfce_files)} arquivo(s)
+                - Pasta NFe/: {len(nfe_files)} arquivo(s)
+                
                 Este é um email automático, por favor não responda.
                 """
                 
@@ -407,19 +425,23 @@ class MainWindow:
                 )
                 
                 if result:
-                    self._add_status(f"Envio concluído com sucesso para o período {period}!")
+                    self._add_status(f"✅ Envio concluído com sucesso para o período {period}!")
+                    self._add_status(f"📦 Arquivo enviado com estrutura organizada:")
+                    self._add_status(f"   📁 NFCe/ ({len(nfce_files)} arquivos)")
+                    self._add_status(f"   📁 NFe/ ({len(nfe_files)} arquivos)")
                 else:
-                    self._add_status(f"ERRO: Falha no envio dos arquivos para o período {period}.")
+                    self._add_status(f"❌ ERRO: Falha no envio dos arquivos para o período {period}.")
                 
                 # Limpar arquivos temporários
                 if os.path.exists(compressed_path):
                     os.remove(compressed_path)
-                    self._add_status("Arquivos temporários removidos.")
+                    self._add_status("🧹 Arquivos temporários removidos.")
                 
             except Exception as e:
-                self._add_status(f"ERRO durante o processamento do período {period}: {str(e)}")
+                self._add_status(f"❌ ERRO durante o processamento do período {period}: {str(e)}")
+                self.logger.error(f"Erro no processamento do período {period}: {e}")
         
-        self._add_status("Processamento concluído!")
+        self._add_status("🎉 Processamento concluído!")
     
     def _add_status(self, message):
         """

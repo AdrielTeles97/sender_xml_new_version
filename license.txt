@@ -1,0 +1,35 @@
+TERMOS DE USO - ENVIO DE ARQUIVOS XML
+
+Este software é de uso exclusivo e propriedade da Suporte Bel Informática.
+
+O presente software foi desenvolvido para uso interno e para prestação de
+serviços aos clientes da Suporte Bel Informática.
+
+É EXPRESSAMENTE PROIBIDO:
+
+1. A redistribuição, venda, locação, transferência ou disponibilização
+deste software a terceiros sem autorização expressa por escrito da
+Suporte Bel Informática;
+
+2. Qualquer tipo de engenharia reversa, descompilação ou desmontagem
+do código fonte do software;
+
+3. A remoção de quaisquer avisos de direitos autorais, marcas comerciais
+ou outras indicações de propriedade presentes no software;
+
+4. O uso do software para fins que não sejam os especificamente
+autorizados pela Suporte Bel Informática.
+
+AVISOS LEGAIS:
+
+O uso indevido ou não autorizado deste software poderá resultar em
+processos legais, incluindo, mas não se limitando a, ações civis e
+criminais por violação de direitos autorais e propriedade intelectual,
+de acordo com a Lei 9.610/98 e demais legislações aplicáveis.
+
+Ao clicar em "Aceito" e prosseguir com a instalação, você reconhece
+ter lido e concordado com todos os termos acima descritos.
+
+Suporte Bel Informática © 2025. Todos os direitos reservados.
+Adriel Teles Dev ©Todos os direitos reservados.
+

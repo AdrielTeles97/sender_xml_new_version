@@ -12,5 +12,9 @@
     "last_period": "2025-01",
     "base_path": "C:\\DigiSat\\SuiteG6\\Servidor\\DFe",
     "document_id": "19.359.762.0001/07",
-    "document_id_clean": "19359762000107"
+    "document_id_clean": "19359762000107",
+    "ui": {
+        "theme": "dark",
+        "color_theme": "blue"
+    }
 }

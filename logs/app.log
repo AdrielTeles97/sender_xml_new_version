@@ -199,3 +199,143 @@
 2025-06-02 11:12:52,919 - XMLSender - INFO - AplicaÁ„o iniciada
 2025-06-02 11:13:41,937 - XMLSender - INFO - Encerrando aplicaÁ„o
 2025-06-02 11:13:41,938 - XMLSender.ConfigManager - INFO - ConfiguraÁıes salvas em config/settings.json
+2025-06-02 12:38:19,907 - XMLSender - INFO - Iniciando aplicaÁ„o Envio de Arquivos XML v1.0.0
+2025-06-02 12:38:19,907 - XMLSender.ConfigManager - INFO - ConfiguraÁıes carregadas de config/settings.json
+2025-06-02 12:38:19,980 - XMLSender - WARNING - Arquivo de Ìcone n„o encontrado: assets/icon.png
+2025-06-02 12:38:20,169 - XMLSender - INFO - AplicaÁ„o iniciada
+2025-06-02 12:38:23,484 - XMLSender.XMLFinder - INFO - Buscando arquivos para doc 19359762000107 no perÌodo 202505
+2025-06-02 12:38:23,485 - XMLSender.XMLFinder - WARNING - DiretÛrio n„o encontrado: C:\DigiSat\SuiteG6\Servidor\DFe\NFCe\2025\05
+2025-06-02 12:38:23,485 - XMLSender.XMLFinder - WARNING - DiretÛrio n„o encontrado: C:\DigiSat\SuiteG6\Servidor\DFe\NFe\2025\05
+2025-06-02 12:38:30,590 - XMLSender - INFO - Encerrando aplicaÁ„o
+2025-06-02 12:38:30,591 - XMLSender.ConfigManager - INFO - ConfiguraÁıes salvas em config/settings.json
+2025-06-02 12:39:24,409 - XMLSender - INFO - Iniciando aplicaÁ„o Envio de Arquivos XML v1.0.0
+2025-06-02 12:39:24,409 - XMLSender.ConfigManager - INFO - ConfiguraÁıes carregadas de config/settings.json
+2025-06-02 12:39:24,475 - XMLSender - WARNING - Arquivo de Ìcone n„o encontrado: assets/icon.png
+2025-06-02 12:39:24,667 - XMLSender - INFO - AplicaÁ„o iniciada
+2025-06-02 12:39:25,466 - XMLSender.XMLFinder - INFO - Buscando arquivos XML para Doc ID=19359762000107, perÌodo=202505
+2025-06-02 12:39:25,466 - XMLSender.XMLFinder - WARNING - DiretÛrio n„o encontrado: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFCe\202505\Autorizados
+2025-06-02 12:39:25,466 - XMLSender.XMLFinder - WARNING - DiretÛrio n„o encontrado: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NF-e\202505\Autorizados
+2025-06-02 12:41:16,375 - XMLSender - INFO - Encerrando aplicaÁ„o
+2025-06-02 12:41:16,376 - XMLSender.ConfigManager - INFO - ConfiguraÁıes salvas em config/settings.json
+2025-06-02 12:41:25,262 - XMLSender - INFO - Iniciando aplicaÁ„o Envio de Arquivos XML v1.0.0
+2025-06-02 12:41:25,263 - XMLSender.ConfigManager - INFO - ConfiguraÁıes carregadas de config/settings.json
+2025-06-02 12:41:25,327 - XMLSender - WARNING - Arquivo de Ìcone n„o encontrado: assets/icon.png
+2025-06-02 12:41:25,521 - XMLSender - INFO - AplicaÁ„o iniciada
+2025-06-02 12:41:26,908 - XMLSender.XMLFinder - INFO - Buscando arquivos XML para Doc ID=19359762000107, perÌodo=202505
+2025-06-02 12:41:26,908 - XMLSender.XMLFinder - INFO - Verificando caminho NFCe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFCe\202505\Autorizados
+2025-06-02 12:41:26,908 - XMLSender.XMLFinder - WARNING - DiretÛrio n„o encontrado: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFCe\202505\Autorizados
+2025-06-02 12:41:26,908 - XMLSender.XMLFinder - INFO - Verificando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NF-e\202505\Autorizados
+2025-06-02 12:41:26,909 - XMLSender.XMLFinder - WARNING - DiretÛrio n„o encontrado: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NF-e\202505\Autorizados
+2025-06-02 12:41:40,277 - XMLSender.XMLFinder - INFO - Buscando arquivos XML para Doc ID=19359762000107, perÌodo=202501
+2025-06-02 12:41:40,277 - XMLSender.XMLFinder - INFO - Verificando caminho NFCe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFCe\202501\Autorizados
+2025-06-02 12:41:40,278 - XMLSender.XMLFinder - INFO - Arquivos XML encontrados em C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFCe\202501\Autorizados: ['01.xml']
+2025-06-02 12:41:40,278 - XMLSender.XMLFinder - INFO - Encontrados 1 arquivos NFCe
+2025-06-02 12:41:40,278 - XMLSender.XMLFinder - INFO - Verificando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NF-e\202501\Autorizados
+2025-06-02 12:41:40,278 - XMLSender.XMLFinder - WARNING - DiretÛrio n„o encontrado: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NF-e\202501\Autorizados
+2025-06-02 12:41:40,282 - XMLSender.ZipService - INFO - Arquivo ZIP criado em temp/19359762000107_202501_xmls.zip com 1 arquivos
+2025-06-02 12:41:40,284 - XMLSender.EmailService - WARNING - Porta 587 n„o È recomendada para Gmail com SSL. Alterando para 465.
+2025-06-02 12:41:44,610 - XMLSender.EmailService - INFO - Email enviado com sucesso para adrielt00@yahoo.com.br
+2025-06-02 12:41:58,680 - XMLSender.XMLFinder - INFO - Buscando arquivos XML para Doc ID=19359762000107, perÌodo=202502
+2025-06-02 12:41:58,681 - XMLSender.XMLFinder - INFO - Verificando caminho NFCe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFCe\202502\Autorizados
+2025-06-02 12:41:58,681 - XMLSender.XMLFinder - INFO - Arquivos XML encontrados em C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFCe\202502\Autorizados: ['01.xml']
+2025-06-02 12:41:58,681 - XMLSender.XMLFinder - INFO - Encontrados 1 arquivos NFCe
+2025-06-02 12:41:58,681 - XMLSender.XMLFinder - INFO - Verificando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NF-e\202502\Autorizados
+2025-06-02 12:41:58,681 - XMLSender.XMLFinder - WARNING - DiretÛrio n„o encontrado: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NF-e\202502\Autorizados
+2025-06-02 12:41:58,684 - XMLSender.ZipService - INFO - Arquivo ZIP criado em temp/19359762000107_202502_xmls.zip com 1 arquivos
+2025-06-02 12:41:58,686 - XMLSender.EmailService - WARNING - Porta 587 n„o È recomendada para Gmail com SSL. Alterando para 465.
+2025-06-02 12:42:02,719 - XMLSender.EmailService - INFO - Email enviado com sucesso para adrielt00@yahoo.com.br
+2025-06-02 12:42:29,104 - XMLSender - INFO - Encerrando aplicaÁ„o
+2025-06-02 12:42:29,105 - XMLSender.ConfigManager - INFO - ConfiguraÁıes salvas em config/settings.json
+2025-06-02 12:48:31,557 - XMLSender - INFO - Iniciando aplicaÁ„o Envio de Arquivos XML v1.0.0
+2025-06-02 12:48:31,557 - XMLSender.ConfigManager - INFO - ConfiguraÁıes carregadas de config/settings.json
+2025-06-02 12:48:31,626 - XMLSender - WARNING - Arquivo de Ìcone n„o encontrado: assets/icon.png
+2025-06-02 12:48:31,825 - XMLSender - INFO - AplicaÁ„o iniciada
+2025-06-02 12:48:35,752 - XMLSender.XMLFinder - INFO - Buscando arquivos XML para Doc ID=19359762000107, perÌodo=202501
+2025-06-02 12:48:35,752 - XMLSender.XMLFinder - INFO - Verificando caminho NFCe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFCe\202501\Autorizados
+2025-06-02 12:48:35,752 - XMLSender.XMLFinder - INFO - Arquivos XML encontrados em C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFCe\202501\Autorizados: ['01.xml']
+2025-06-02 12:48:35,752 - XMLSender.XMLFinder - INFO - Encontrados 1 arquivos NFCe
+2025-06-02 12:48:35,752 - XMLSender.XMLFinder - INFO - Verificando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NF-e\202501\Autorizados
+2025-06-02 12:48:35,753 - XMLSender.XMLFinder - WARNING - DiretÛrio n„o encontrado: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NF-e\202501\Autorizados
+2025-06-02 12:48:35,756 - XMLSender.ZipService - INFO - Arquivo ZIP criado em temp/19359762000107_202501_xmls.zip com 1 arquivos
+2025-06-02 12:48:35,757 - XMLSender.EmailService - WARNING - Porta 587 n„o È recomendada para Gmail com SSL. Alterando para 465.
+2025-06-02 12:48:39,751 - XMLSender.EmailService - INFO - Email enviado com sucesso para adrielt00@yahoo.com.br
+2025-06-02 12:48:40,974 - XMLSender - INFO - Encerrando aplicaÁ„o
+2025-06-02 12:48:40,975 - XMLSender.ConfigManager - INFO - ConfiguraÁıes salvas em config/settings.json
+2025-06-03 09:00:23,897 - XMLSender - INFO - Iniciando aplicaÁ„o Envio de Arquivos XML v1.0.0
+2025-06-03 09:00:23,897 - XMLSender.ConfigManager - INFO - ConfiguraÁıes carregadas de config/settings.json
+2025-06-03 09:00:24,094 - XMLSender - WARNING - Arquivo de Ìcone n„o encontrado: assets/icon.png
+2025-06-03 09:00:24,375 - XMLSender - INFO - AplicaÁ„o iniciada
+2025-06-03 09:00:29,376 - XMLSender.XMLFinder - INFO - Buscando arquivos XML para Doc ID=19359762000107, perÌodo=202505
+2025-06-03 09:00:29,376 - XMLSender.XMLFinder - INFO - Verificando caminho NFCe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFCe\202505\Autorizados
+2025-06-03 09:00:29,379 - XMLSender.XMLFinder - WARNING - DiretÛrio n„o encontrado: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFCe\202505\Autorizados
+2025-06-03 09:00:29,379 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NF-e\202505\Autorizados
+2025-06-03 09:00:29,379 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFe\202505\Autorizados
+2025-06-03 09:00:29,379 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\nfe\202505\Autorizados
+2025-06-03 09:00:29,379 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NF_e\202505\Autorizados
+2025-06-03 09:00:29,379 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFE\202505\Autorizados
+2025-06-03 09:00:29,379 - XMLSender.XMLFinder - INFO - Tentando busca flexÌvel em: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado
+2025-06-03 09:00:29,379 - XMLSender.XMLFinder - INFO - SubdiretÛrios encontrados contendo 'nf': ['NFCe', 'NFe']
+2025-06-03 09:00:29,379 - XMLSender.XMLFinder - INFO - Testando subdiretÛrio encontrado: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFe\202505\Autorizados
+2025-06-03 09:00:29,379 - XMLSender.XMLFinder - WARNING - Nenhum diretÛrio NFe encontrado para o perÌodo 202505
+2025-06-03 09:00:29,379 - XMLSender.XMLFinder - INFO - === DEBUG NFe - Estrutura de diretÛrios ===
+2025-06-03 09:00:29,380 - XMLSender.XMLFinder - INFO - Base path: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado
+2025-06-03 09:00:29,380 - XMLSender.XMLFinder - INFO - SubdiretÛrios em 'Enviado': ['NFCe', 'NFe']
+2025-06-03 09:00:29,380 - XMLSender.XMLFinder - INFO -   Verificando: NFCe
+2025-06-03 09:00:29,380 - XMLSender.XMLFinder - INFO -     Conte˙do: ['202501', '202502']
+2025-06-03 09:00:29,380 - XMLSender.XMLFinder - INFO -   Verificando: NFe
+2025-06-03 09:00:29,381 - XMLSender.XMLFinder - INFO -     Conte˙do: ['202501']
+2025-06-03 09:00:35,746 - XMLSender.XMLFinder - INFO - Buscando arquivos XML para Doc ID=19359762000107, perÌodo=202501
+2025-06-03 09:00:35,746 - XMLSender.XMLFinder - INFO - Verificando caminho NFCe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFCe\202501\Autorizados
+2025-06-03 09:00:35,747 - XMLSender.XMLFinder - INFO - Arquivos XML encontrados em C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFCe\202501\Autorizados: ['01.xml']
+2025-06-03 09:00:35,747 - XMLSender.XMLFinder - INFO - Encontrados 1 arquivos NFCe
+2025-06-03 09:00:35,747 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NF-e\202501\Autorizados
+2025-06-03 09:00:35,747 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFe\202501\Autorizados
+2025-06-03 09:00:35,748 - XMLSender.XMLFinder - INFO - Arquivos XML encontrados em C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFe\202501\Autorizados: ['01.xml']
+2025-06-03 09:00:35,749 - XMLSender.XMLFinder - INFO - Encontrados 1 arquivos NFe em C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFe\202501\Autorizados
+2025-06-03 09:00:35,755 - XMLSender.ZipService - INFO - Arquivo ZIP criado em temp/19359762000107_202501_xmls.zip com 2 arquivos
+2025-06-03 09:00:35,757 - XMLSender.EmailService - WARNING - Porta 587 n„o È recomendada para Gmail com SSL. Alterando para 465.
+2025-06-03 09:00:40,249 - XMLSender.EmailService - INFO - Email enviado com sucesso para adrielt00@yahoo.com.br
+2025-06-03 09:01:52,296 - XMLSender - INFO - Encerrando aplicaÁ„o
+2025-06-03 09:01:52,298 - XMLSender.ConfigManager - INFO - ConfiguraÁıes salvas em config/settings.json
+2025-06-03 09:55:29,515 - XMLSender - INFO - Iniciando aplica√ß√£o Envio de Arquivos XML v1.0.0
+2025-06-03 09:55:29,516 - XMLSender.ConfigManager - INFO - Configura√ß√µes carregadas de config/settings.json
+2025-06-03 09:55:29,590 - XMLSender - INFO - √çcone da aplica√ß√£o carregado: assets/icon.ico
+2025-06-03 09:55:29,806 - XMLSender - INFO - Configura√ß√£o padr√£o adicionada: ui
+2025-06-03 09:55:29,806 - XMLSender - INFO - Aplica√ß√£o iniciada com sucesso
+2025-06-03 09:55:41,752 - XMLSender.XMLFinder - INFO - Buscando arquivos XML para Doc ID=19359762000107, per√≠odo=202501
+2025-06-03 09:55:41,752 - XMLSender.XMLFinder - INFO - Verificando caminho NFCe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFCe\202501\Autorizados
+2025-06-03 09:55:41,753 - XMLSender.XMLFinder - INFO - Arquivos XML encontrados em C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFCe\202501\Autorizados: ['01.xml']
+2025-06-03 09:55:41,753 - XMLSender.XMLFinder - INFO - Encontrados 1 arquivos NFCe
+2025-06-03 09:55:41,753 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NF-e\202501\Autorizados
+2025-06-03 09:55:41,753 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFe\202501\Autorizados
+2025-06-03 09:55:41,754 - XMLSender.XMLFinder - INFO - Arquivos XML encontrados em C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFe\202501\Autorizados: ['01.xml']
+2025-06-03 09:55:41,754 - XMLSender.XMLFinder - INFO - Encontrados 1 arquivos NFe em C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFe\202501\Autorizados
+2025-06-03 09:55:41,758 - XMLSender.ZipService - INFO - Arquivo ZIP criado em temp/19359762000107_202501_xmls.zip com 2 arquivos
+2025-06-03 09:55:41,761 - XMLSender.EmailService - WARNING - Porta 587 n√£o √© recomendada para Gmail com SSL. Alterando para 465.
+2025-06-03 09:55:46,597 - XMLSender.EmailService - INFO - Email enviado com sucesso para adrielt00@yahoo.com.br
+2025-06-03 09:59:34,603 - XMLSender - INFO - Iniciando processo de encerramento da aplica√ß√£o
+2025-06-03 09:59:34,604 - XMLSender.ConfigManager - INFO - Configura√ß√µes salvas em config/settings.json
+2025-06-03 09:59:34,604 - XMLSender - INFO - Configura√ß√µes salvas com sucesso
+2025-06-03 09:59:34,604 - XMLSender - INFO - Aplica√ß√£o encerrada
+2025-06-03 10:04:06,491 - XMLSender - INFO - Iniciando aplica√ß√£o Envio de Arquivos XML v1.0.0
+2025-06-03 10:04:06,492 - XMLSender.ConfigManager - INFO - Configura√ß√µes carregadas de config/settings.json
+2025-06-03 10:04:06,558 - XMLSender - INFO - √çcone da aplica√ß√£o carregado: assets/icon.ico
+2025-06-03 10:04:06,730 - XMLSender - INFO - Aplica√ß√£o iniciada com sucesso
+2025-06-03 10:04:11,132 - XMLSender.XMLFinder - INFO - Buscando arquivos XML para Doc ID=19359762000107, per√≠odo=202501
+2025-06-03 10:04:11,132 - XMLSender.XMLFinder - INFO - Verificando caminho NFCe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFCe\202501\Autorizados
+2025-06-03 10:04:11,133 - XMLSender.XMLFinder - INFO - Arquivos XML encontrados em C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFCe\202501\Autorizados: ['01.xml']
+2025-06-03 10:04:11,133 - XMLSender.XMLFinder - INFO - Encontrados 1 arquivos NFCe
+2025-06-03 10:04:11,133 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NF-e\202501\Autorizados
+2025-06-03 10:04:11,133 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFe\202501\Autorizados
+2025-06-03 10:04:11,133 - XMLSender.XMLFinder - INFO - Arquivos XML encontrados em C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFe\202501\Autorizados: ['01.xml']
+2025-06-03 10:04:11,134 - XMLSender.XMLFinder - INFO - Encontrados 1 arquivos NFe em C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFe\202501\Autorizados
+2025-06-03 10:04:11,136 - XMLSender.ZipService - INFO - Adicionando 1 arquivos NFCe na pasta NFCe/
+2025-06-03 10:04:11,136 - XMLSender.ZipService - INFO - Adicionando 1 arquivos NFe na pasta NFe/
+2025-06-03 10:04:11,137 - XMLSender.ZipService - INFO - Arquivo ZIP organizado criado em temp/19359762000107_202501_xmls.zip com 2 arquivos
+2025-06-03 10:04:11,141 - XMLSender.ZipService - INFO - üì¶ Estrutura do ZIP (2 arquivos total):
+2025-06-03 10:04:11,141 - XMLSender.ZipService - INFO -   üìÅ NFCe/ (1 arquivos)
+2025-06-03 10:04:11,142 - XMLSender.ZipService - INFO -     üìÑ 01.xml
+2025-06-03 10:04:11,142 - XMLSender.ZipService - INFO -   üìÅ NFe/ (1 arquivos)
+2025-06-03 10:04:11,142 - XMLSender.ZipService - INFO -     üìÑ 01.xml
+2025-06-03 10:04:11,148 - XMLSender.EmailService - WARNING - Porta 587 n√£o √© recomendada para Gmail com SSL. Alterando para 465.
+2025-06-03 10:04:16,124 - XMLSender.EmailService - INFO - Email enviado com sucesso para adrielt00@yahoo.com.br
