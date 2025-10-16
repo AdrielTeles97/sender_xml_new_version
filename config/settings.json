@@ -4,17 +4,23 @@
         "port": 587,
         "username": "adrielt008@gmail.com",
         "password": "rpyr tpvn ogiz chwe",
-        "use_ssl": true
+        "use_ssl": false
     },
     "cnpj": "19359762000107",
-    "company_name": "ADRIEL TESTE 2 LTDA SA",
+    "company_name": "EMPRESA TESTE LTDA",
     "email": "adrielt00@yahoo.com.br",
     "last_period": "2025-01",
     "base_path": "C:\\DigiSat\\SuiteG6\\Servidor\\DFe",
-    "document_id": "19.359.762.0001/07",
-    "document_id_clean": "19359762000107",
+    "document_id": "00.000.000/0001-00",
+    "document_id_clean": "00000000000100",
     "ui": {
         "theme": "dark",
         "color_theme": "blue"
-    }
+    },
+    "retry": {
+        "max_tentativas": 3,
+        "intervalo_segundos": 5,
+        "ativo": true
+    },
+    "doc_type": "CNPJ"
 }

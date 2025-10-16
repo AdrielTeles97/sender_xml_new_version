@@ -27,7 +27,7 @@ class PeriodSelector(ctk.CTkFrame):
         self.add_btn.pack(side="right", padx=5)
         
         # Frame para a lista de períodos com espaçamento adequado
-        self.periods_frame = ctk.CTkScrollableFrame(self, height=150)
+        self.periods_frame = ctk.CTkScrollableFrame(self, height=180)
         self.periods_frame.pack(fill="both", expand=True, padx=10, pady=5)
         
         # Inicializa com o mês anterior
@@ -50,32 +50,12 @@ class PeriodSelector(ctk.CTkFrame):
         default_month = last_month.month
         
         # Criar frame para este período com margem para separação visual
-        period_frame = ctk.CTkFrame(self.periods_frame, fg_color=("#E5E5E5", "#333333"))
-        period_frame.pack(fill="x", padx=5, pady=5, ipadx=5, ipady=5)
+        period_frame = ctk.CTkFrame(self.periods_frame, fg_color=("#E5E5E5", "#2B2B2B"))
+        period_frame.pack(fill="x", padx=5, pady=5)
         
-        # Criar frame interno para organizar os elementos
-        content_frame = ctk.CTkFrame(period_frame)
-        content_frame.pack(fill="x", expand=True, padx=5, pady=5)
-        
-        # Frame para as labels descritivas
-        label_frame = ctk.CTkFrame(content_frame, fg_color="transparent")
-        label_frame.pack(fill="x", pady=(0, 2))
-        
-        # Label para ano
-        year_label = ctk.CTkLabel(label_frame, text="Ano:", font=("Helvetica", 11), anchor="w")
-        year_label.pack(side="left", padx=(5, 2))
-        
-        # Espaçador
-        spacer = ctk.CTkLabel(label_frame, text="", width=30)
-        spacer.pack(side="left")
-        
-        # Label para mês
-        month_label = ctk.CTkLabel(label_frame, text="Mês:", font=("Helvetica", 11), anchor="w")
-        month_label.pack(side="left", padx=(30, 2))
-        
-        # Frame para os seletores
-        selectors_frame = ctk.CTkFrame(content_frame, fg_color="transparent")
-        selectors_frame.pack(fill="x")
+        # Frame para os seletores (tudo em uma linha)
+        selectors_frame = ctk.CTkFrame(period_frame, fg_color="transparent")
+        selectors_frame.pack(fill="x", padx=10, pady=10)
         
         # Gerar intervalo dinâmico de anos (10 anos atrás e 10 anos à frente)
         years = self.get_year_range()
@@ -86,25 +66,22 @@ class PeriodSelector(ctk.CTkFrame):
             selectors_frame,
             values=[str(y) for y in years],
             variable=year_var,
-            width=80,
+            width=90,
+            height=32
         )
-        year_dropdown.pack(side="left", padx=(5, 2))
-        
-        # Separador
-        separator = ctk.CTkLabel(selectors_frame, text="-", width=10)
-        separator.pack(side="left", padx=0)
+        year_dropdown.pack(side="left", padx=(0, 10))
         
         # Dropdown para mês
         months = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"]
         month_names = {
-            "01": "Janeiro", "02": "Fevereiro", "03": "Março", "04": "Abril",
-            "05": "Maio", "06": "Junho", "07": "Julho", "08": "Agosto",
-            "09": "Setembro", "10": "Outubro", "11": "Novembro", "12": "Dezembro"
+            "01": "Jan", "02": "Fev", "03": "Mar", "04": "Abr",
+            "05": "Mai", "06": "Jun", "07": "Jul", "08": "Ago",
+            "09": "Set", "10": "Out", "11": "Nov", "12": "Dez"
         }
         
         month_options = []
         for m in months:
-            month_option = f"{m} ({month_names[m][:3]})"  # Abreviando para os primeiros 3 caracteres
+            month_option = f"{m} - {month_names[m]}"  # Formato: "09 - Set"
             month_options.append(month_option)
         
         month_var = ctk.StringVar(value=month_options[default_month-1])
@@ -113,19 +90,22 @@ class PeriodSelector(ctk.CTkFrame):
             values=month_options,
             variable=month_var,
             width=120,
+            height=32
         )
-        month_dropdown.pack(side="left", padx=(2, 5))
+        month_dropdown.pack(side="left", padx=(0, 10))
         
         # Criar um ID único para este período
         period_id = len(self.periods)
         
-        # Botão para remover este período
+        # Botão para remover este período (mais visível)
         remove_btn = ctk.CTkButton(
             selectors_frame, 
-            text="✕", 
-            width=30, 
+            text="🗑️ Remover", 
+            width=90,
+            height=28,
             fg_color="#D32F2F",  
             hover_color="#B71C1C",
+            font=ctk.CTkFont(size=11),
             command=lambda id=period_id: self._remove_period_by_id(id)
         )
         remove_btn.pack(side="right", padx=5)
@@ -148,14 +128,14 @@ class PeriodSelector(ctk.CTkFrame):
         
     def update_remove_buttons(self):
         """Atualiza a visibilidade dos botões de remoção com base no número de períodos"""
-        # Se houver apenas um período, desativar o botão de remoção
+        # Se houver apenas um período, ocultar o botão de remoção
         if len(self.periods) <= 1:
             for period in self.periods:
-                period["remove_button"].configure(state="disabled")
+                period["remove_button"].pack_forget()  # Ocultar
         else:
-            # Se houver mais de um período, ativar todos os botões de remoção
+            # Se houver mais de um período, mostrar todos os botões de remoção
             for period in self.periods:
-                period["remove_button"].configure(state="normal")
+                period["remove_button"].pack(side="right", padx=5)  # Mostrar
     
     def _remove_period_by_id(self, period_id):
         """
@@ -190,8 +170,9 @@ class PeriodSelector(ctk.CTkFrame):
         periods = []
         for period_data in self.periods:
             year = period_data["year_var"].get()
-            # Extrai apenas o número do mês (primeiros 2 caracteres)
-            month = period_data["month_var"].get().split()[0]
+            # Extrai apenas o número do mês (formato: "09 - Setembro" -> "09")
+            month_text = period_data["month_var"].get()
+            month = month_text.split(" - ")[0] if " - " in month_text else month_text.split()[0]
             period = f"{year}-{month}"
             periods.append(period)
         return periods
@@ -207,7 +188,9 @@ class PeriodSelector(ctk.CTkFrame):
         
         for period_data in self.periods:
             year = period_data["year_var"].get()
-            month_code = period_data["month_var"].get().split()[0]
+            # Extrai o número do mês (formato: "09 - Setembro" -> "09")
+            month_text = period_data["month_var"].get()
+            month_code = month_text.split(" - ")[0] if " - " in month_text else month_text.split()[0]
             month_name = month_names.get(month_code, month_code)
             formatted_periods.append(f"{month_name} de {year}")
         

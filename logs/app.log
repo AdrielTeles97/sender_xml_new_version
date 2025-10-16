@@ -339,3 +339,398 @@
 2025-06-03 10:04:11,142 - XMLSender.ZipService - INFO -     📄 01.xml
 2025-06-03 10:04:11,148 - XMLSender.EmailService - WARNING - Porta 587 não é recomendada para Gmail com SSL. Alterando para 465.
 2025-06-03 10:04:16,124 - XMLSender.EmailService - INFO - Email enviado com sucesso para adrielt00@yahoo.com.br
+2025-10-16 17:21:53,914 - XMLSender - INFO - Iniciando aplicação Envio de Arquivos XML v1.0.0
+2025-10-16 17:21:53,914 - XMLSender.ConfigManager - INFO - Configurações carregadas de config/settings.json
+2025-10-16 17:21:54,437 - XMLSender - INFO - Ícone da aplicação carregado: assets/icon.ico
+2025-10-16 17:21:54,460 - XMLSender.HistoryManager - INFO - Banco de dados inicializado: data/history.db
+2025-10-16 17:21:54,991 - root - ERROR - Erro fatal: name 'email_entry' is not defined
+2025-10-16 17:22:21,104 - XMLSender - INFO - Iniciando aplicação Envio de Arquivos XML v1.0.0
+2025-10-16 17:22:21,105 - XMLSender.ConfigManager - INFO - Configurações carregadas de config/settings.json
+2025-10-16 17:22:21,184 - XMLSender - INFO - Ícone da aplicação carregado: assets/icon.ico
+2025-10-16 17:22:21,185 - XMLSender.HistoryManager - INFO - Banco de dados inicializado: data/history.db
+2025-10-16 17:22:21,504 - root - ERROR - Erro fatal: name 'email_entry' is not defined
+2025-10-16 17:22:37,825 - XMLSender - INFO - Iniciando aplicação Envio de Arquivos XML v1.0.0
+2025-10-16 17:22:37,825 - XMLSender.ConfigManager - INFO - Configurações carregadas de config/settings.json
+2025-10-16 17:22:37,905 - XMLSender - INFO - Ícone da aplicação carregado: assets/icon.ico
+2025-10-16 17:22:37,907 - XMLSender.HistoryManager - INFO - Banco de dados inicializado: data/history.db
+2025-10-16 17:22:38,231 - root - ERROR - Erro fatal: name 'email_entry' is not defined
+2025-10-16 17:23:35,943 - XMLSender - INFO - Iniciando aplicação Envio de Arquivos XML v1.0.0
+2025-10-16 17:23:35,943 - XMLSender.ConfigManager - INFO - Configurações carregadas de config/settings.json
+2025-10-16 17:23:36,035 - XMLSender - INFO - Ícone da aplicação carregado: assets/icon.ico
+2025-10-16 17:23:36,036 - XMLSender.HistoryManager - INFO - Banco de dados inicializado: data/history.db
+2025-10-16 17:23:36,559 - XMLSender - INFO - Aplicação iniciada com sucesso
+2025-10-16 17:24:27,467 - XMLSender.EmailService - INFO - Teste de conexão SMTP realizado com sucesso
+2025-10-16 17:24:34,797 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:24:45,577 - XMLSender.XMLFinder - INFO - Buscando arquivos XML para Doc ID=19359762000107, período=202509
+2025-10-16 17:24:45,577 - XMLSender.XMLFinder - INFO - Verificando caminho NFCe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFCe\202509\Autorizados
+2025-10-16 17:24:45,577 - XMLSender.XMLFinder - WARNING - Diretório não encontrado: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFCe\202509\Autorizados
+2025-10-16 17:24:45,577 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NF-e\202509\Autorizados
+2025-10-16 17:24:45,578 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFe\202509\Autorizados
+2025-10-16 17:24:45,578 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\nfe\202509\Autorizados
+2025-10-16 17:24:45,578 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NF_e\202509\Autorizados
+2025-10-16 17:24:45,578 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFE\202509\Autorizados
+2025-10-16 17:24:45,578 - XMLSender.XMLFinder - INFO - Tentando busca flexível em: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado
+2025-10-16 17:24:45,578 - XMLSender.XMLFinder - WARNING - Nenhum diretório NFe encontrado para o período 202509
+2025-10-16 17:24:45,578 - XMLSender.XMLFinder - INFO - === DEBUG NFe - Estrutura de diretórios ===
+2025-10-16 17:24:45,578 - XMLSender.XMLFinder - INFO - Base path: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado
+2025-10-16 17:24:45,578 - XMLSender.XMLFinder - WARNING - Base path não existe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado
+2025-10-16 17:24:46,819 - XMLSender.XMLFinder - INFO - Buscando arquivos XML para Doc ID=19359762000107, período=202509
+2025-10-16 17:24:46,819 - XMLSender.XMLFinder - INFO - Verificando caminho NFCe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFCe\202509\Autorizados
+2025-10-16 17:24:46,819 - XMLSender.XMLFinder - WARNING - Diretório não encontrado: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFCe\202509\Autorizados
+2025-10-16 17:24:46,819 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NF-e\202509\Autorizados
+2025-10-16 17:24:46,819 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFe\202509\Autorizados
+2025-10-16 17:24:46,820 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\nfe\202509\Autorizados
+2025-10-16 17:24:46,820 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NF_e\202509\Autorizados
+2025-10-16 17:24:46,820 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFE\202509\Autorizados
+2025-10-16 17:24:46,820 - XMLSender.XMLFinder - INFO - Tentando busca flexível em: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado
+2025-10-16 17:24:46,820 - XMLSender.XMLFinder - WARNING - Nenhum diretório NFe encontrado para o período 202509
+2025-10-16 17:24:46,820 - XMLSender.XMLFinder - INFO - === DEBUG NFe - Estrutura de diretórios ===
+2025-10-16 17:24:46,820 - XMLSender.XMLFinder - INFO - Base path: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado
+2025-10-16 17:24:46,820 - XMLSender.XMLFinder - WARNING - Base path não existe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado
+2025-10-16 17:24:47,821 - XMLSender.XMLFinder - INFO - Buscando arquivos XML para Doc ID=19359762000107, período=202509
+2025-10-16 17:24:47,821 - XMLSender.XMLFinder - INFO - Verificando caminho NFCe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFCe\202509\Autorizados
+2025-10-16 17:24:47,821 - XMLSender.XMLFinder - WARNING - Diretório não encontrado: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFCe\202509\Autorizados
+2025-10-16 17:24:47,821 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NF-e\202509\Autorizados
+2025-10-16 17:24:47,822 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFe\202509\Autorizados
+2025-10-16 17:24:47,822 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\nfe\202509\Autorizados
+2025-10-16 17:24:47,822 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NF_e\202509\Autorizados
+2025-10-16 17:24:47,822 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFE\202509\Autorizados
+2025-10-16 17:24:47,822 - XMLSender.XMLFinder - INFO - Tentando busca flexível em: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado
+2025-10-16 17:24:47,822 - XMLSender.XMLFinder - WARNING - Nenhum diretório NFe encontrado para o período 202509
+2025-10-16 17:24:47,822 - XMLSender.XMLFinder - INFO - === DEBUG NFe - Estrutura de diretórios ===
+2025-10-16 17:24:47,822 - XMLSender.XMLFinder - INFO - Base path: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado
+2025-10-16 17:24:47,822 - XMLSender.XMLFinder - WARNING - Base path não existe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado
+2025-10-16 17:24:48,530 - XMLSender.XMLFinder - INFO - Buscando arquivos XML para Doc ID=19359762000107, período=202509
+2025-10-16 17:24:48,530 - XMLSender.XMLFinder - INFO - Verificando caminho NFCe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFCe\202509\Autorizados
+2025-10-16 17:24:48,530 - XMLSender.XMLFinder - WARNING - Diretório não encontrado: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFCe\202509\Autorizados
+2025-10-16 17:24:48,530 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NF-e\202509\Autorizados
+2025-10-16 17:24:48,530 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFe\202509\Autorizados
+2025-10-16 17:24:48,530 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\nfe\202509\Autorizados
+2025-10-16 17:24:48,530 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NF_e\202509\Autorizados
+2025-10-16 17:24:48,530 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFE\202509\Autorizados
+2025-10-16 17:24:48,530 - XMLSender.XMLFinder - INFO - Tentando busca flexível em: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado
+2025-10-16 17:24:48,531 - XMLSender.XMLFinder - WARNING - Nenhum diretório NFe encontrado para o período 202509
+2025-10-16 17:24:48,531 - XMLSender.XMLFinder - INFO - === DEBUG NFe - Estrutura de diretórios ===
+2025-10-16 17:24:48,531 - XMLSender.XMLFinder - INFO - Base path: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado
+2025-10-16 17:24:48,531 - XMLSender.XMLFinder - WARNING - Base path não existe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado
+2025-10-16 17:24:49,538 - XMLSender.XMLFinder - INFO - Buscando arquivos XML para Doc ID=19359762000107, período=202509
+2025-10-16 17:24:49,538 - XMLSender.XMLFinder - INFO - Verificando caminho NFCe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFCe\202509\Autorizados
+2025-10-16 17:24:49,538 - XMLSender.XMLFinder - WARNING - Diretório não encontrado: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFCe\202509\Autorizados
+2025-10-16 17:24:49,539 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NF-e\202509\Autorizados
+2025-10-16 17:24:49,539 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFe\202509\Autorizados
+2025-10-16 17:24:49,539 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\nfe\202509\Autorizados
+2025-10-16 17:24:49,539 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NF_e\202509\Autorizados
+2025-10-16 17:24:49,539 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFE\202509\Autorizados
+2025-10-16 17:24:49,539 - XMLSender.XMLFinder - INFO - Tentando busca flexível em: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado
+2025-10-16 17:24:49,539 - XMLSender.XMLFinder - WARNING - Nenhum diretório NFe encontrado para o período 202509
+2025-10-16 17:24:49,539 - XMLSender.XMLFinder - INFO - === DEBUG NFe - Estrutura de diretórios ===
+2025-10-16 17:24:49,539 - XMLSender.XMLFinder - INFO - Base path: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado
+2025-10-16 17:24:49,539 - XMLSender.XMLFinder - WARNING - Base path não existe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado
+2025-10-16 17:24:50,236 - XMLSender.XMLFinder - INFO - Buscando arquivos XML para Doc ID=19359762000107, período=202509
+2025-10-16 17:24:50,236 - XMLSender.XMLFinder - INFO - Verificando caminho NFCe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFCe\202509\Autorizados
+2025-10-16 17:24:50,236 - XMLSender.XMLFinder - WARNING - Diretório não encontrado: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFCe\202509\Autorizados
+2025-10-16 17:24:50,236 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NF-e\202509\Autorizados
+2025-10-16 17:24:50,236 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFe\202509\Autorizados
+2025-10-16 17:24:50,236 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\nfe\202509\Autorizados
+2025-10-16 17:24:50,236 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NF_e\202509\Autorizados
+2025-10-16 17:24:50,236 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado\NFE\202509\Autorizados
+2025-10-16 17:24:50,237 - XMLSender.XMLFinder - INFO - Tentando busca flexível em: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado
+2025-10-16 17:24:50,237 - XMLSender.XMLFinder - WARNING - Nenhum diretório NFe encontrado para o período 202509
+2025-10-16 17:24:50,237 - XMLSender.XMLFinder - INFO - === DEBUG NFe - Estrutura de diretórios ===
+2025-10-16 17:24:50,237 - XMLSender.XMLFinder - INFO - Base path: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado
+2025-10-16 17:24:50,237 - XMLSender.XMLFinder - WARNING - Base path não existe: C:\DigiSat\SuiteG6\Servidor\DFe\19359762000107\Enviado
+2025-10-16 17:25:11,556 - XMLSender.XMLFinder - WARNING - Documento 1019830001169 não tem formato padrão de CPF/CNPJ
+2025-10-16 17:25:11,556 - XMLSender.XMLFinder - INFO - Buscando arquivos XML para Doc ID=1019830001169, período=202509
+2025-10-16 17:25:11,556 - XMLSender.XMLFinder - INFO - Verificando caminho NFCe: C:\DigiSat\SuiteG6\Servidor\DFe\1019830001169\Enviado\NFCe\202509\Autorizados
+2025-10-16 17:25:11,556 - XMLSender.XMLFinder - WARNING - Diretório não encontrado: C:\DigiSat\SuiteG6\Servidor\DFe\1019830001169\Enviado\NFCe\202509\Autorizados
+2025-10-16 17:25:11,556 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\1019830001169\Enviado\NF-e\202509\Autorizados
+2025-10-16 17:25:11,556 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\1019830001169\Enviado\NFe\202509\Autorizados
+2025-10-16 17:25:11,556 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\1019830001169\Enviado\nfe\202509\Autorizados
+2025-10-16 17:25:11,556 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\1019830001169\Enviado\NF_e\202509\Autorizados
+2025-10-16 17:25:11,556 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\1019830001169\Enviado\NFE\202509\Autorizados
+2025-10-16 17:25:11,556 - XMLSender.XMLFinder - INFO - Tentando busca flexível em: C:\DigiSat\SuiteG6\Servidor\DFe\1019830001169\Enviado
+2025-10-16 17:25:11,556 - XMLSender.XMLFinder - WARNING - Nenhum diretório NFe encontrado para o período 202509
+2025-10-16 17:25:11,556 - XMLSender.XMLFinder - INFO - === DEBUG NFe - Estrutura de diretórios ===
+2025-10-16 17:25:11,557 - XMLSender.XMLFinder - INFO - Base path: C:\DigiSat\SuiteG6\Servidor\DFe\1019830001169\Enviado
+2025-10-16 17:25:11,557 - XMLSender.XMLFinder - WARNING - Base path não existe: C:\DigiSat\SuiteG6\Servidor\DFe\1019830001169\Enviado
+2025-10-16 17:25:13,187 - XMLSender - INFO - Iniciando processo de encerramento da aplicação
+2025-10-16 17:25:13,188 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:25:13,188 - XMLSender - INFO - Configurações salvas com sucesso
+2025-10-16 17:25:13,188 - XMLSender - INFO - Aplicação encerrada
+2025-10-16 17:27:01,687 - XMLSender - INFO - Iniciando aplicação Envio de Arquivos XML v1.0.0
+2025-10-16 17:27:01,688 - XMLSender.ConfigManager - INFO - Configurações carregadas de config/settings.json
+2025-10-16 17:27:01,781 - XMLSender - INFO - Ícone da aplicação carregado: assets/icon.ico
+2025-10-16 17:27:01,783 - XMLSender.HistoryManager - INFO - Banco de dados inicializado: data/history.db
+2025-10-16 17:27:02,239 - XMLSender - INFO - Aplicação iniciada com sucesso
+2025-10-16 17:27:31,378 - XMLSender - INFO - Iniciando processo de encerramento da aplicação
+2025-10-16 17:27:31,379 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:27:31,379 - XMLSender - INFO - Configurações salvas com sucesso
+2025-10-16 17:27:31,379 - XMLSender - INFO - Aplicação encerrada
+2025-10-16 17:29:27,888 - XMLSender - INFO - Iniciando aplicação Envio de Arquivos XML v1.0.0
+2025-10-16 17:29:27,889 - XMLSender.ConfigManager - INFO - Configurações carregadas de config/settings.json
+2025-10-16 17:29:27,977 - XMLSender - INFO - Ícone da aplicação carregado: assets/icon.ico
+2025-10-16 17:29:27,979 - XMLSender.HistoryManager - INFO - Banco de dados inicializado: data/history.db
+2025-10-16 17:29:28,388 - XMLSender - INFO - Aplicação iniciada com sucesso
+2025-10-16 17:29:48,939 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:29:51,373 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:30:00,404 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:30:10,222 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:30:26,045 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:30:54,768 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:30:55,886 - XMLSender - INFO - Iniciando processo de encerramento da aplicação
+2025-10-16 17:30:55,887 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:30:55,887 - XMLSender - INFO - Configurações salvas com sucesso
+2025-10-16 17:30:55,887 - XMLSender - INFO - Aplicação encerrada
+2025-10-16 17:32:51,336 - XMLSender - INFO - Iniciando aplicação Envio de Arquivos XML v1.0.0
+2025-10-16 17:32:51,336 - XMLSender.ConfigManager - INFO - Configurações carregadas de config/settings.json
+2025-10-16 17:32:51,422 - XMLSender - INFO - Ícone da aplicação carregado: assets/icon.ico
+2025-10-16 17:32:51,424 - XMLSender.HistoryManager - INFO - Banco de dados inicializado: data/history.db
+2025-10-16 17:32:51,835 - XMLSender - INFO - Aplicação iniciada com sucesso
+2025-10-16 17:33:26,524 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:34:51,170 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:34:57,309 - XMLSender - INFO - Iniciando processo de encerramento da aplicação
+2025-10-16 17:34:57,310 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:34:57,310 - XMLSender - INFO - Configurações salvas com sucesso
+2025-10-16 17:34:57,310 - XMLSender - INFO - Aplicação encerrada
+2025-10-16 17:35:52,621 - XMLSender - INFO - Iniciando aplicação Envio de Arquivos XML v1.0.0
+2025-10-16 17:35:52,622 - XMLSender.ConfigManager - INFO - Configurações carregadas de config/settings.json
+2025-10-16 17:35:52,709 - XMLSender - INFO - Ícone da aplicação carregado: assets/icon.ico
+2025-10-16 17:35:52,710 - XMLSender.HistoryManager - INFO - Banco de dados inicializado: data/history.db
+2025-10-16 17:35:53,082 - root - ERROR - Erro fatal: name 'doc_id_entry' is not defined
+2025-10-16 17:36:10,917 - XMLSender - INFO - Iniciando aplicação Envio de Arquivos XML v1.0.0
+2025-10-16 17:36:10,917 - XMLSender.ConfigManager - INFO - Configurações carregadas de config/settings.json
+2025-10-16 17:36:10,994 - XMLSender - INFO - Ícone da aplicação carregado: assets/icon.ico
+2025-10-16 17:36:10,995 - XMLSender.HistoryManager - INFO - Banco de dados inicializado: data/history.db
+2025-10-16 17:36:11,314 - root - ERROR - Erro fatal: name 'doc_id_entry' is not defined
+2025-10-16 17:36:21,613 - XMLSender - INFO - Iniciando aplicação Envio de Arquivos XML v1.0.0
+2025-10-16 17:36:21,614 - XMLSender.ConfigManager - INFO - Configurações carregadas de config/settings.json
+2025-10-16 17:36:21,687 - XMLSender - INFO - Ícone da aplicação carregado: assets/icon.ico
+2025-10-16 17:36:21,688 - XMLSender.HistoryManager - INFO - Banco de dados inicializado: data/history.db
+2025-10-16 17:36:22,034 - root - ERROR - Erro fatal: name 'doc_id_entry' is not defined
+2025-10-16 17:36:47,458 - XMLSender - INFO - Iniciando aplicação Envio de Arquivos XML v1.0.0
+2025-10-16 17:36:47,459 - XMLSender.ConfigManager - INFO - Configurações carregadas de config/settings.json
+2025-10-16 17:36:47,540 - XMLSender - INFO - Ícone da aplicação carregado: assets/icon.ico
+2025-10-16 17:36:47,541 - XMLSender.HistoryManager - INFO - Banco de dados inicializado: data/history.db
+2025-10-16 17:36:47,858 - root - ERROR - Erro fatal: name 'doc_id_entry' is not defined
+2025-10-16 17:37:13,128 - XMLSender - INFO - Iniciando aplicação Envio de Arquivos XML v1.0.0
+2025-10-16 17:37:13,128 - XMLSender.ConfigManager - INFO - Configurações carregadas de config/settings.json
+2025-10-16 17:37:13,209 - XMLSender - INFO - Ícone da aplicação carregado: assets/icon.ico
+2025-10-16 17:37:13,210 - XMLSender.HistoryManager - INFO - Banco de dados inicializado: data/history.db
+2025-10-16 17:37:13,549 - root - ERROR - Erro fatal: name 'doc_id_entry' is not defined
+2025-10-16 17:38:25,806 - XMLSender - INFO - Iniciando aplicação Envio de Arquivos XML v1.0.0
+2025-10-16 17:38:25,807 - XMLSender.ConfigManager - INFO - Configurações carregadas de config/settings.json
+2025-10-16 17:38:25,885 - XMLSender - INFO - Ícone da aplicação carregado: assets/icon.ico
+2025-10-16 17:38:25,888 - XMLSender.HistoryManager - INFO - Banco de dados inicializado: data/history.db
+2025-10-16 17:38:26,269 - XMLSender - INFO - Aplicação iniciada com sucesso
+2025-10-16 17:38:31,143 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:38:31,379 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:38:31,574 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:38:32,337 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:38:32,495 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:38:32,750 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:38:32,911 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:38:33,026 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:38:33,204 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:38:33,303 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:38:33,481 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:38:35,761 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:38:36,278 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:38:36,568 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:38:36,979 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:38:37,062 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:38:37,222 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:38:37,433 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:38:37,630 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:38:43,253 - XMLSender.XMLFinder - INFO - Buscando arquivos XML para Doc ID=04339773298, período=202509
+2025-10-16 17:38:43,254 - XMLSender.XMLFinder - INFO - Verificando caminho NFCe: C:\DigiSat\SuiteG6\Servidor\DFe\04339773298\Enviado\NFCe\202509\Autorizados
+2025-10-16 17:38:43,255 - XMLSender.XMLFinder - WARNING - Diretório não encontrado: C:\DigiSat\SuiteG6\Servidor\DFe\04339773298\Enviado\NFCe\202509\Autorizados
+2025-10-16 17:38:43,255 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\04339773298\Enviado\NF-e\202509\Autorizados
+2025-10-16 17:38:43,255 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\04339773298\Enviado\NFe\202509\Autorizados
+2025-10-16 17:38:43,255 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\04339773298\Enviado\nfe\202509\Autorizados
+2025-10-16 17:38:43,256 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\04339773298\Enviado\NF_e\202509\Autorizados
+2025-10-16 17:38:43,256 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\04339773298\Enviado\NFE\202509\Autorizados
+2025-10-16 17:38:43,256 - XMLSender.XMLFinder - INFO - Tentando busca flexível em: C:\DigiSat\SuiteG6\Servidor\DFe\04339773298\Enviado
+2025-10-16 17:38:43,256 - XMLSender.XMLFinder - WARNING - Nenhum diretório NFe encontrado para o período 202509
+2025-10-16 17:38:43,256 - XMLSender.XMLFinder - INFO - === DEBUG NFe - Estrutura de diretórios ===
+2025-10-16 17:38:43,256 - XMLSender.XMLFinder - INFO - Base path: C:\DigiSat\SuiteG6\Servidor\DFe\04339773298\Enviado
+2025-10-16 17:38:43,257 - XMLSender.XMLFinder - WARNING - Base path não existe: C:\DigiSat\SuiteG6\Servidor\DFe\04339773298\Enviado
+2025-10-16 17:39:02,731 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:39:07,249 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:39:44,984 - XMLSender - INFO - Iniciando processo de encerramento da aplicação
+2025-10-16 17:39:44,985 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:39:44,985 - XMLSender - INFO - Configurações salvas com sucesso
+2025-10-16 17:39:44,986 - XMLSender - INFO - Aplicação encerrada
+2025-10-16 17:39:45,406 - XMLSender - INFO - Iniciando aplicação Envio de Arquivos XML v1.0.0
+2025-10-16 17:39:45,407 - XMLSender.ConfigManager - INFO - Configurações carregadas de config/settings.json
+2025-10-16 17:39:45,490 - XMLSender - INFO - Ícone da aplicação carregado: assets/icon.ico
+2025-10-16 17:39:45,492 - XMLSender.HistoryManager - INFO - Banco de dados inicializado: data/history.db
+2025-10-16 17:39:45,901 - XMLSender - INFO - Aplicação iniciada com sucesso
+2025-10-16 17:39:47,067 - XMLSender - INFO - Iniciando processo de encerramento da aplicação
+2025-10-16 17:39:47,068 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:39:47,068 - XMLSender - INFO - Configurações salvas com sucesso
+2025-10-16 17:39:47,068 - XMLSender - INFO - Aplicação encerrada
+2025-10-16 17:42:36,069 - XMLSender - INFO - Iniciando aplicação Envio de Arquivos XML v1.0.0
+2025-10-16 17:42:36,070 - XMLSender.ConfigManager - INFO - Configurações carregadas de config/settings.json
+2025-10-16 17:42:36,157 - XMLSender - INFO - Ícone da aplicação carregado: assets/icon.ico
+2025-10-16 17:42:36,158 - XMLSender.HistoryManager - INFO - Banco de dados inicializado: data/history.db
+2025-10-16 17:42:36,807 - XMLSender - INFO - Aplicação iniciada com sucesso
+2025-10-16 17:42:50,749 - XMLSender.XMLFinder - INFO - Buscando arquivos XML para Doc ID=04339773298, período=202509
+2025-10-16 17:42:50,749 - XMLSender.XMLFinder - INFO - Verificando caminho NFCe: C:\DigiSat\SuiteG6\Servidor\DFe\04339773298\Enviado\NFCe\202509\Autorizados
+2025-10-16 17:42:50,750 - XMLSender.XMLFinder - WARNING - Diretório não encontrado: C:\DigiSat\SuiteG6\Servidor\DFe\04339773298\Enviado\NFCe\202509\Autorizados
+2025-10-16 17:42:50,750 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\04339773298\Enviado\NF-e\202509\Autorizados
+2025-10-16 17:42:50,750 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\04339773298\Enviado\NFe\202509\Autorizados
+2025-10-16 17:42:50,750 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\04339773298\Enviado\nfe\202509\Autorizados
+2025-10-16 17:42:50,750 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\04339773298\Enviado\NF_e\202509\Autorizados
+2025-10-16 17:42:50,750 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\04339773298\Enviado\NFE\202509\Autorizados
+2025-10-16 17:42:50,750 - XMLSender.XMLFinder - INFO - Tentando busca flexível em: C:\DigiSat\SuiteG6\Servidor\DFe\04339773298\Enviado
+2025-10-16 17:42:50,750 - XMLSender.XMLFinder - WARNING - Nenhum diretório NFe encontrado para o período 202509
+2025-10-16 17:42:50,750 - XMLSender.XMLFinder - INFO - === DEBUG NFe - Estrutura de diretórios ===
+2025-10-16 17:42:50,750 - XMLSender.XMLFinder - INFO - Base path: C:\DigiSat\SuiteG6\Servidor\DFe\04339773298\Enviado
+2025-10-16 17:42:50,750 - XMLSender.XMLFinder - WARNING - Base path não existe: C:\DigiSat\SuiteG6\Servidor\DFe\04339773298\Enviado
+2025-10-16 17:43:10,803 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:43:10,962 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:43:11,569 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:43:11,709 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:43:11,851 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:43:13,175 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:43:13,313 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:43:13,452 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:43:13,570 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:43:13,714 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:43:13,869 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:43:15,458 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:43:16,408 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:43:18,007 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:43:18,110 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:43:41,656 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:44:05,404 - XMLSender.EmailService - INFO - Teste de conexão SMTP realizado com sucesso
+2025-10-16 17:44:21,167 - XMLSender.XMLFinder - INFO - Buscando arquivos XML para Doc ID=00000000000100, período=202509
+2025-10-16 17:44:21,167 - XMLSender.XMLFinder - INFO - Verificando caminho NFCe: C:\DigiSat\SuiteG6\Servidor\DFe\00000000000100\Enviado\NFCe\202509\Autorizados
+2025-10-16 17:44:21,167 - XMLSender.XMLFinder - WARNING - Diretório não encontrado: C:\DigiSat\SuiteG6\Servidor\DFe\00000000000100\Enviado\NFCe\202509\Autorizados
+2025-10-16 17:44:21,168 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\00000000000100\Enviado\NF-e\202509\Autorizados
+2025-10-16 17:44:21,168 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\00000000000100\Enviado\NFe\202509\Autorizados
+2025-10-16 17:44:21,168 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\00000000000100\Enviado\nfe\202509\Autorizados
+2025-10-16 17:44:21,168 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\00000000000100\Enviado\NF_e\202509\Autorizados
+2025-10-16 17:44:21,168 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\00000000000100\Enviado\NFE\202509\Autorizados
+2025-10-16 17:44:21,168 - XMLSender.XMLFinder - INFO - Tentando busca flexível em: C:\DigiSat\SuiteG6\Servidor\DFe\00000000000100\Enviado
+2025-10-16 17:44:21,168 - XMLSender.XMLFinder - WARNING - Nenhum diretório NFe encontrado para o período 202509
+2025-10-16 17:44:21,168 - XMLSender.XMLFinder - INFO - === DEBUG NFe - Estrutura de diretórios ===
+2025-10-16 17:44:21,168 - XMLSender.XMLFinder - INFO - Base path: C:\DigiSat\SuiteG6\Servidor\DFe\00000000000100\Enviado
+2025-10-16 17:44:21,168 - XMLSender.XMLFinder - WARNING - Base path não existe: C:\DigiSat\SuiteG6\Servidor\DFe\00000000000100\Enviado
+2025-10-16 17:44:21,171 - XMLSender.XMLFinder - INFO - Buscando arquivos XML para Doc ID=00000000000100, período=201609
+2025-10-16 17:44:21,172 - XMLSender.XMLFinder - INFO - Verificando caminho NFCe: C:\DigiSat\SuiteG6\Servidor\DFe\00000000000100\Enviado\NFCe\201609\Autorizados
+2025-10-16 17:44:21,172 - XMLSender.XMLFinder - WARNING - Diretório não encontrado: C:\DigiSat\SuiteG6\Servidor\DFe\00000000000100\Enviado\NFCe\201609\Autorizados
+2025-10-16 17:44:21,172 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\00000000000100\Enviado\NF-e\201609\Autorizados
+2025-10-16 17:44:21,172 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\00000000000100\Enviado\NFe\201609\Autorizados
+2025-10-16 17:44:21,172 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\00000000000100\Enviado\nfe\201609\Autorizados
+2025-10-16 17:44:21,172 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\00000000000100\Enviado\NF_e\201609\Autorizados
+2025-10-16 17:44:21,172 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\00000000000100\Enviado\NFE\201609\Autorizados
+2025-10-16 17:44:21,172 - XMLSender.XMLFinder - INFO - Tentando busca flexível em: C:\DigiSat\SuiteG6\Servidor\DFe\00000000000100\Enviado
+2025-10-16 17:44:21,173 - XMLSender.XMLFinder - WARNING - Nenhum diretório NFe encontrado para o período 201609
+2025-10-16 17:44:21,173 - XMLSender.XMLFinder - INFO - === DEBUG NFe - Estrutura de diretórios ===
+2025-10-16 17:44:21,173 - XMLSender.XMLFinder - INFO - Base path: C:\DigiSat\SuiteG6\Servidor\DFe\00000000000100\Enviado
+2025-10-16 17:44:21,173 - XMLSender.XMLFinder - WARNING - Base path não existe: C:\DigiSat\SuiteG6\Servidor\DFe\00000000000100\Enviado
+2025-10-16 17:45:41,976 - XMLSender - INFO - Iniciando processo de encerramento da aplicação
+2025-10-16 17:45:41,977 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:45:41,977 - XMLSender - INFO - Configurações salvas com sucesso
+2025-10-16 17:45:41,977 - XMLSender - INFO - Aplicação encerrada
+2025-10-16 17:46:24,674 - XMLSender - INFO - Iniciando aplicação Envio de Arquivos XML v1.0.0
+2025-10-16 17:46:24,674 - XMLSender.ConfigManager - INFO - Configurações carregadas de config/settings.json
+2025-10-16 17:46:24,757 - XMLSender - INFO - Ícone da aplicação carregado: assets/icon.ico
+2025-10-16 17:46:24,759 - XMLSender.HistoryManager - INFO - Banco de dados inicializado: data/history.db
+2025-10-16 17:46:25,254 - XMLSender - INFO - Aplicação iniciada com sucesso
+2025-10-16 17:47:28,720 - XMLSender - INFO - Iniciando processo de encerramento da aplicação
+2025-10-16 17:47:28,720 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:47:28,721 - XMLSender - INFO - Configurações salvas com sucesso
+2025-10-16 17:47:28,721 - XMLSender - INFO - Aplicação encerrada
+2025-10-16 17:47:31,437 - XMLSender - INFO - Iniciando aplicação Envio de Arquivos XML v1.0.0
+2025-10-16 17:47:31,438 - XMLSender.ConfigManager - INFO - Configurações carregadas de config/settings.json
+2025-10-16 17:47:31,523 - XMLSender - INFO - Ícone da aplicação carregado: assets/icon.ico
+2025-10-16 17:47:31,525 - XMLSender.HistoryManager - INFO - Banco de dados inicializado: data/history.db
+2025-10-16 17:47:32,026 - XMLSender - INFO - Aplicação iniciada com sucesso
+2025-10-16 17:48:08,746 - XMLSender - INFO - Iniciando processo de encerramento da aplicação
+2025-10-16 17:48:08,747 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:48:08,747 - XMLSender - INFO - Configurações salvas com sucesso
+2025-10-16 17:48:08,747 - XMLSender - INFO - Aplicação encerrada
+2025-10-16 17:48:56,620 - XMLSender - INFO - Iniciando aplicação Envio de Arquivos XML v1.0.0
+2025-10-16 17:48:56,620 - XMLSender.ConfigManager - INFO - Configurações carregadas de config/settings.json
+2025-10-16 17:48:56,708 - XMLSender - INFO - Ícone da aplicação carregado: assets/icon.ico
+2025-10-16 17:48:56,710 - XMLSender.HistoryManager - INFO - Banco de dados inicializado: data/history.db
+2025-10-16 17:48:57,278 - XMLSender - INFO - Aplicação iniciada com sucesso
+2025-10-16 17:49:21,466 - XMLSender - INFO - Iniciando processo de encerramento da aplicação
+2025-10-16 17:49:21,467 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:49:21,467 - XMLSender - INFO - Configurações salvas com sucesso
+2025-10-16 17:49:21,467 - XMLSender - INFO - Aplicação encerrada
+2025-10-16 17:49:36,497 - XMLSender - INFO - Iniciando aplicação Envio de Arquivos XML v1.0.0
+2025-10-16 17:49:36,498 - XMLSender.ConfigManager - INFO - Configurações carregadas de config/settings.json
+2025-10-16 17:49:36,582 - XMLSender - INFO - Ícone da aplicação carregado: assets/icon.ico
+2025-10-16 17:49:36,583 - XMLSender.HistoryManager - INFO - Banco de dados inicializado: data/history.db
+2025-10-16 17:49:37,127 - XMLSender - INFO - Aplicação iniciada com sucesso
+2025-10-16 17:49:59,099 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:50:01,347 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:50:37,334 - XMLSender - INFO - Iniciando aplicação Envio de Arquivos XML v1.0.0
+2025-10-16 17:50:37,334 - XMLSender.ConfigManager - INFO - Configurações carregadas de config/settings.json
+2025-10-16 17:50:37,430 - XMLSender - INFO - Ícone da aplicação carregado: assets/icon.ico
+2025-10-16 17:50:37,431 - XMLSender.HistoryManager - INFO - Banco de dados inicializado: data/history.db
+2025-10-16 17:50:37,980 - XMLSender - INFO - Aplicação iniciada com sucesso
+2025-10-16 17:50:42,035 - XMLSender - INFO - Iniciando processo de encerramento da aplicação
+2025-10-16 17:50:42,036 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:50:42,036 - XMLSender - INFO - Configurações salvas com sucesso
+2025-10-16 17:50:42,036 - XMLSender - INFO - Aplicação encerrada
+2025-10-16 17:51:27,153 - XMLSender.XMLFinder - INFO - Buscando arquivos XML para Doc ID=00000000000100, período=202512
+2025-10-16 17:51:27,153 - XMLSender.XMLFinder - INFO - Verificando caminho NFCe: C:\DigiSat\SuiteG6\Servidor\DFe\00000000000100\Enviado\NFCe\202512\Autorizados
+2025-10-16 17:51:27,153 - XMLSender.XMLFinder - WARNING - Diretório não encontrado: C:\DigiSat\SuiteG6\Servidor\DFe\00000000000100\Enviado\NFCe\202512\Autorizados
+2025-10-16 17:51:27,154 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\00000000000100\Enviado\NF-e\202512\Autorizados
+2025-10-16 17:51:27,154 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\00000000000100\Enviado\NFe\202512\Autorizados
+2025-10-16 17:51:27,154 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\00000000000100\Enviado\nfe\202512\Autorizados
+2025-10-16 17:51:27,154 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\00000000000100\Enviado\NF_e\202512\Autorizados
+2025-10-16 17:51:27,154 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\00000000000100\Enviado\NFE\202512\Autorizados
+2025-10-16 17:51:27,154 - XMLSender.XMLFinder - INFO - Tentando busca flexível em: C:\DigiSat\SuiteG6\Servidor\DFe\00000000000100\Enviado
+2025-10-16 17:51:27,154 - XMLSender.XMLFinder - WARNING - Nenhum diretório NFe encontrado para o período 202512
+2025-10-16 17:51:27,154 - XMLSender.XMLFinder - INFO - === DEBUG NFe - Estrutura de diretórios ===
+2025-10-16 17:51:27,154 - XMLSender.XMLFinder - INFO - Base path: C:\DigiSat\SuiteG6\Servidor\DFe\00000000000100\Enviado
+2025-10-16 17:51:27,154 - XMLSender.XMLFinder - WARNING - Base path não existe: C:\DigiSat\SuiteG6\Servidor\DFe\00000000000100\Enviado
+2025-10-16 17:51:27,158 - XMLSender.XMLFinder - INFO - Buscando arquivos XML para Doc ID=00000000000100, período=201802
+2025-10-16 17:51:27,158 - XMLSender.XMLFinder - INFO - Verificando caminho NFCe: C:\DigiSat\SuiteG6\Servidor\DFe\00000000000100\Enviado\NFCe\201802\Autorizados
+2025-10-16 17:51:27,159 - XMLSender.XMLFinder - WARNING - Diretório não encontrado: C:\DigiSat\SuiteG6\Servidor\DFe\00000000000100\Enviado\NFCe\201802\Autorizados
+2025-10-16 17:51:27,159 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\00000000000100\Enviado\NF-e\201802\Autorizados
+2025-10-16 17:51:27,159 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\00000000000100\Enviado\NFe\201802\Autorizados
+2025-10-16 17:51:27,159 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\00000000000100\Enviado\nfe\201802\Autorizados
+2025-10-16 17:51:27,159 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\00000000000100\Enviado\NF_e\201802\Autorizados
+2025-10-16 17:51:27,159 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\00000000000100\Enviado\NFE\201802\Autorizados
+2025-10-16 17:51:27,159 - XMLSender.XMLFinder - INFO - Tentando busca flexível em: C:\DigiSat\SuiteG6\Servidor\DFe\00000000000100\Enviado
+2025-10-16 17:51:27,159 - XMLSender.XMLFinder - WARNING - Nenhum diretório NFe encontrado para o período 201802
+2025-10-16 17:51:27,159 - XMLSender.XMLFinder - INFO - === DEBUG NFe - Estrutura de diretórios ===
+2025-10-16 17:51:27,159 - XMLSender.XMLFinder - INFO - Base path: C:\DigiSat\SuiteG6\Servidor\DFe\00000000000100\Enviado
+2025-10-16 17:51:27,159 - XMLSender.XMLFinder - WARNING - Base path não existe: C:\DigiSat\SuiteG6\Servidor\DFe\00000000000100\Enviado
+2025-10-16 17:51:33,719 - XMLSender - INFO - Iniciando processo de encerramento da aplicação
+2025-10-16 17:51:33,720 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:51:33,720 - XMLSender - INFO - Configurações salvas com sucesso
+2025-10-16 17:51:33,720 - XMLSender - INFO - Aplicação encerrada
+2025-10-16 17:51:48,588 - XMLSender - INFO - Iniciando aplicação Envio de Arquivos XML v1.0.0
+2025-10-16 17:51:48,589 - XMLSender.ConfigManager - INFO - Configurações carregadas de config/settings.json
+2025-10-16 17:51:48,673 - XMLSender - INFO - Ícone da aplicação carregado: assets/icon.ico
+2025-10-16 17:51:48,675 - XMLSender.HistoryManager - INFO - Banco de dados inicializado: data/history.db
+2025-10-16 17:51:49,207 - XMLSender - INFO - Aplicação iniciada com sucesso
+2025-10-16 17:52:14,319 - XMLSender - INFO - Iniciando processo de encerramento da aplicação
+2025-10-16 17:52:14,320 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:52:14,320 - XMLSender - INFO - Configurações salvas com sucesso
+2025-10-16 17:52:14,320 - XMLSender - INFO - Aplicação encerrada
+2025-10-16 17:53:15,430 - XMLSender - INFO - Iniciando aplicação Envio de Arquivos XML v1.0.0
+2025-10-16 17:53:15,430 - XMLSender.ConfigManager - INFO - Configurações carregadas de config/settings.json
+2025-10-16 17:53:15,516 - XMLSender - INFO - Ícone da aplicação carregado: assets/icon.ico
+2025-10-16 17:53:15,518 - XMLSender.HistoryManager - INFO - Banco de dados inicializado: data/history.db
+2025-10-16 17:53:16,057 - XMLSender - INFO - Aplicação iniciada com sucesso
+2025-10-16 17:53:39,548 - XMLSender - INFO - Iniciando processo de encerramento da aplicação
+2025-10-16 17:53:39,549 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:53:39,549 - XMLSender - INFO - Configurações salvas com sucesso
+2025-10-16 17:53:39,549 - XMLSender - INFO - Aplicação encerrada
+2025-10-16 17:54:27,837 - XMLSender - INFO - Iniciando aplicação Envio de Arquivos XML v1.0.0
+2025-10-16 17:54:27,838 - XMLSender.ConfigManager - INFO - Configurações carregadas de config/settings.json
+2025-10-16 17:54:27,921 - XMLSender - INFO - Ícone da aplicação carregado: assets/icon.ico
+2025-10-16 17:54:27,922 - XMLSender.HistoryManager - INFO - Banco de dados inicializado: data/history.db
+2025-10-16 17:54:28,441 - XMLSender - INFO - Aplicação iniciada com sucesso
+2025-10-16 17:54:32,337 - XMLSender - INFO - Iniciando processo de encerramento da aplicação
+2025-10-16 17:54:32,338 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-16 17:54:32,338 - XMLSender - INFO - Configurações salvas com sucesso
+2025-10-16 17:54:32,338 - XMLSender - INFO - Aplicação encerrada

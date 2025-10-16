@@ -6,6 +6,7 @@ import smtplib
 import logging
 import socket
 import ssl
+import time
 from email import encoders
 from email.mime.base import MIMEBase
 from email.mime.multipart import MIMEMultipart
@@ -14,14 +15,18 @@ from email.mime.text import MIMEText
 class EmailService:
     """Serviço para envio de emails"""
     
-    def __init__(self, smtp_config):
+    def __init__(self, smtp_config, max_retries=3, retry_delay=5):
         """
         Inicializa o serviço de email.
         
         Args:
             smtp_config (dict): Configurações do servidor SMTP
+            max_retries (int): Número máximo de tentativas em caso de falha
+            retry_delay (int): Tempo de espera entre tentativas (segundos)
         """
         self.smtp_config = smtp_config
+        self.max_retries = max_retries
+        self.retry_delay = retry_delay
         self.logger = logging.getLogger("XMLSender.EmailService")
     
     def send_email(self, to_email, subject, body, attachments=None, html_body=None, company_info=None, files_info=None):
@@ -86,6 +91,72 @@ class EmailService:
         except Exception as e:
             self.logger.error(f"Erro ao enviar email: {e}")
             return False
+    
+    def send_email_with_retry(self, to_email, subject, body, attachments=None, 
+                             html_body=None, company_info=None, files_info=None,
+                             on_retry_callback=None):
+        """
+        Envia um email com retry automático em caso de falha.
+        
+        Args:
+            to_email (str ou list): Email(s) do(s) destinatário(s)
+            subject (str): Assunto do email
+            body (str): Corpo do email (texto simples)
+            attachments (list, optional): Lista de caminhos de arquivos para anexar
+            html_body (str, optional): Corpo do email em formato HTML
+            company_info (dict, optional): Informações da empresa para o email formatado
+            files_info (dict, optional): Informações dos arquivos para o email formatado
+            on_retry_callback (function, optional): Callback chamado a cada tentativa
+            
+        Returns:
+            tuple: (sucesso: bool, tentativas: int, erro: str ou None)
+        """
+        # Suportar múltiplos destinatários
+        if isinstance(to_email, list):
+            to_email_str = ', '.join(to_email)
+        else:
+            to_email_str = to_email
+        
+        last_error = None
+        
+        for tentativa in range(1, self.max_retries + 1):
+            try:
+                self.logger.info(f"Tentativa {tentativa}/{self.max_retries} de envio para {to_email_str}")
+                
+                # Chamar callback se fornecido
+                if on_retry_callback:
+                    on_retry_callback(tentativa, self.max_retries)
+                
+                # Tentar enviar
+                result = self.send_email(
+                    to_email_str, 
+                    subject, 
+                    body, 
+                    attachments,
+                    html_body,
+                    company_info,
+                    files_info
+                )
+                
+                if result:
+                    self.logger.info(f"Email enviado com sucesso na tentativa {tentativa}")
+                    return (True, tentativa, None)
+                else:
+                    last_error = "Falha no envio (sem exceção específica)"
+                    
+            except Exception as e:
+                last_error = str(e)
+                self.logger.warning(f"Tentativa {tentativa} falhou: {last_error}")
+                
+                # Se não for a última tentativa, aguardar antes de tentar novamente
+                if tentativa < self.max_retries:
+                    wait_time = self.retry_delay * tentativa  # Backoff exponencial
+                    self.logger.info(f"Aguardando {wait_time}s antes da próxima tentativa...")
+                    time.sleep(wait_time)
+        
+        # Todas as tentativas falharam
+        self.logger.error(f"Falha ao enviar email após {self.max_retries} tentativas: {last_error}")
+        return (False, self.max_retries, last_error)
     
     def _create_formatted_email(self, company_info, files_info):
         """
@@ -216,7 +287,7 @@ class EmailService:
     
     def _connect_to_smtp(self):
         """
-        Conecta ao servidor SMTP.
+        Conecta ao servidor SMTP com timeout e tratamento robusto de erros.
         
         Returns:
             smtplib.SMTP: Objeto de conexão com servidor SMTP
@@ -237,31 +308,43 @@ class EmailService:
         # Log para depuração
         self.logger.debug(f"Tentando conectar ao servidor SMTP: {server}:{port}, SSL: {use_ssl}")
         
+        # Timeout reduzido para 15 segundos para evitar travamento
+        connection_timeout = 15
+        
         try:
-            # Conexão padrão
-            if use_ssl:
-                # Para conexões com SSL (geralmente porta 465)
-                context = ssl.create_default_context()
-                smtp = smtplib.SMTP_SSL(server, port, timeout=30, context=context)
-                self.logger.debug("Conexão SSL estabelecida")
-            else:
-                # Para conexões com TLS (geralmente porta 587)
-                smtp = smtplib.SMTP(server, port, timeout=30)
-                smtp.ehlo()
-                if smtp.has_extn('STARTTLS'):
+            # Definir timeout global do socket para esta operação
+            original_timeout = socket.getdefaulttimeout()
+            socket.setdefaulttimeout(connection_timeout)
+            
+            try:
+                # Conexão padrão
+                if use_ssl:
+                    # Para conexões com SSL (geralmente porta 465)
                     context = ssl.create_default_context()
-                    smtp.starttls(context=context)
-                    smtp.ehlo()
-                    self.logger.debug("Conexão TLS estabelecida")
+                    smtp = smtplib.SMTP_SSL(server, port, timeout=connection_timeout, context=context)
+                    self.logger.debug("Conexão SSL estabelecida")
                 else:
-                    self.logger.debug("Servidor não suporta STARTTLS")
-            
-            # Login
-            self.logger.debug(f"Autenticando com usuário: {username}")
-            smtp.login(username, password)
-            self.logger.debug("Autenticação bem-sucedida")
-            
-            return smtp
+                    # Para conexões com TLS (geralmente porta 587)
+                    smtp = smtplib.SMTP(server, port, timeout=connection_timeout)
+                    smtp.ehlo()
+                    if smtp.has_extn('STARTTLS'):
+                        context = ssl.create_default_context()
+                        smtp.starttls(context=context)
+                        smtp.ehlo()
+                        self.logger.debug("Conexão TLS estabelecida")
+                    else:
+                        self.logger.debug("Servidor não suporta STARTTLS")
+                
+                # Login com timeout
+                self.logger.debug(f"Autenticando com usuário: {username}")
+                smtp.login(username, password)
+                self.logger.debug("Autenticação bem-sucedida")
+                
+                return smtp
+                
+            finally:
+                # Restaurar timeout original
+                socket.setdefaulttimeout(original_timeout)
         
         except smtplib.SMTPAuthenticationError as e:
             error_msg = (
@@ -277,8 +360,16 @@ class EmailService:
             self.logger.error(error_msg)
             raise Exception(error_msg)
         
-        except (socket.gaierror, socket.timeout) as e:
-            error_msg = f"Erro de conexão: {str(e)}. Verifique o servidor e porta."
+        except socket.timeout:
+            error_msg = (
+                f"Tempo de conexão esgotado ao tentar conectar a {server}:{port}. "
+                "Verifique se o servidor está acessível e se a porta está correta."
+            )
+            self.logger.error(error_msg)
+            raise Exception(error_msg)
+        
+        except (socket.gaierror, OSError) as e:
+            error_msg = f"Erro de conexão: {str(e)}. Verifique o servidor e porta, ou sua conexão com a internet."
             self.logger.error(error_msg)
             raise Exception(error_msg)
         
@@ -288,13 +379,13 @@ class EmailService:
             raise Exception(error_msg)
         
         except Exception as e:
-            error_msg = f"Erro ao conectar ao servidor SMTP ({server}:{port}): {e}"
+            error_msg = f"Erro inesperado ao conectar ao servidor SMTP ({server}:{port}): {type(e).__name__}: {e}"
             self.logger.error(error_msg)
             raise Exception(error_msg)
     
     def _connect_to_gmail(self, server, port, username, password, use_ssl):
         """
-        Conexão específica para o Gmail.
+        Conexão específica para o Gmail com timeout reduzido.
         
         Args:
             server (str): Servidor SMTP
@@ -308,6 +399,9 @@ class EmailService:
         """
         self.logger.debug("Detectado servidor Gmail. Usando configurações específicas.")
         
+        # Timeout reduzido para evitar travamento
+        connection_timeout = 15
+        
         # Para Gmail, recomendamos ajustar as portas de acordo com o protocolo
         if use_ssl:
             # Se usar SSL, força a porta 465
@@ -320,17 +414,21 @@ class EmailService:
                 self.logger.warning(f"Porta {port} não é recomendada para Gmail com TLS. Alterando para 587.")
                 port = 587
         
+        # Definir timeout global do socket para esta operação
+        original_timeout = socket.getdefaulttimeout()
+        socket.setdefaulttimeout(connection_timeout)
+        
         try:
             context = ssl.create_default_context()
             
             if use_ssl or port == 465:
                 # Usar SSL (porta 465)
                 self.logger.debug(f"Conectando ao Gmail via SSL na porta {port}")
-                smtp = smtplib.SMTP_SSL(server, port, timeout=30, context=context)
+                smtp = smtplib.SMTP_SSL(server, port, timeout=connection_timeout, context=context)
             else:
                 # Usar TLS (porta 587)
                 self.logger.debug(f"Conectando ao Gmail via TLS na porta {port}")
-                smtp = smtplib.SMTP(server, port, timeout=30)
+                smtp = smtplib.SMTP(server, port, timeout=connection_timeout)
                 smtp.ehlo()
                 smtp.starttls(context=context)
                 smtp.ehlo()
@@ -351,6 +449,14 @@ class EmailService:
             self.logger.error(error_msg)
             raise Exception(error_msg)
         
+        except socket.timeout:
+            error_msg = (
+                f"Tempo de conexão esgotado ao conectar ao Gmail ({server}:{port}). "
+                "Verifique sua conexão com a internet."
+            )
+            self.logger.error(error_msg)
+            raise Exception(error_msg)
+        
         except ssl.SSLError as e:
             if "WRONG_VERSION_NUMBER" in str(e):
                 error_msg = (
@@ -367,9 +473,13 @@ class EmailService:
             raise Exception(error_msg)
         
         except Exception as e:
-            error_msg = f"Erro ao conectar ao Gmail: {e}"
+            error_msg = f"Erro ao conectar ao Gmail: {type(e).__name__}: {e}"
             self.logger.error(error_msg)
             raise Exception(error_msg)
+        
+        finally:
+            # Restaurar timeout original
+            socket.setdefaulttimeout(original_timeout)
     
     def _attach_file(self, msg, file_path):
         """
