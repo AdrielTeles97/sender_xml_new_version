@@ -162,18 +162,27 @@ class XMLSenderApp:
     
     def _load_default_config(self):
         """Carregar configurações padrão se necessário"""
+        # Carregar credenciais do .env se disponível
+        try:
+            from modules.env_config import EnvConfig
+            env = EnvConfig()
+            smtp_config = env.get_smtp_config()
+        except Exception as e:
+            self.logger.warning(f"Não foi possível carregar .env: {e}. Usando valores padrão.")
+            smtp_config = {
+                'server': 'smtp.gmail.com',
+                'port': 587,
+                'username': '',
+                'password': '',
+                'use_ssl': False
+            }
+        
         default_config = {
             'document_id': '',
             'company_name': '',
             'email': '',
             'base_path': 'C:\\DigiSat\\SuiteG6\\Servidor\\DFe',
-            'smtp': {
-                'server': 'smtp.gmail.com',
-                'port': 587,
-                'username': 'belinformatica2019@gmail.com',
-                'password': 'ztkn jhra empm qbhk',
-                'use_ssl': False
-            },
+            'smtp': smtp_config,
             'ui': {
                 'theme': 'dark',
                 'color_theme': 'blue'
