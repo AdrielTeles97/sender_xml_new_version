@@ -8,6 +8,7 @@ a = Analysis(
     binaries=[],
     datas=[
         ('assets/icon.ico', 'assets'),  # Incluir ícone
+        ('.env', '.'),  # Incluir arquivo .env
     ],
     hiddenimports=[
         'requests',
@@ -16,6 +17,7 @@ a = Analysis(
         'packaging.specifiers',
         'customtkinter',
         'PIL._tkinter_finder',
+        'dotenv',
     ],
     hookspath=[],
     hooksconfig={},

@@ -268,10 +268,26 @@ class SettingsWindow:
         """Carrega as configurações nos campos"""
         # Configurações SMTP
         smtp_config = self.config.get('smtp', {})
+        
+        # Se username/password estiverem vazios no settings.json, tentar carregar do .env
+        username = smtp_config.get('username', '')
+        password = smtp_config.get('password', '')
+        
+        if not username or not password:
+            try:
+                from modules.env_config import EnvConfig
+                env = EnvConfig()
+                env_smtp = env.get_smtp_config()
+                username = username or env_smtp.get('username', '')
+                password = password or env_smtp.get('password', '')
+                self.logger.info("Credenciais carregadas do arquivo .env")
+            except Exception as e:
+                self.logger.warning(f"Não foi possível carregar credenciais do .env: {e}")
+        
         self.smtp_server_entry.insert(0, smtp_config.get('server', ''))
         self.smtp_port_entry.insert(0, str(smtp_config.get('port', 587)))
-        self.smtp_username_entry.insert(0, smtp_config.get('username', ''))
-        self.smtp_password_entry.insert(0, smtp_config.get('password', ''))
+        self.smtp_username_entry.insert(0, username)
+        self.smtp_password_entry.insert(0, password)
         self.smtp_ssl_var.set(smtp_config.get('use_ssl', False))
         
         # Configurações de diretórios

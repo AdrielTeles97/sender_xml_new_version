@@ -1,246 +1,128 @@
-# 📝 Changelog - Sistema de Envio de Arquivos XML
+# 📋 Changelog
 
-## 🎉 Versão 2.0.0 - Melhorias Significativas (Atual)
+Todas as mudanças notáveis deste projeto serão documentadas neste arquivo.
 
-### ✨ Novas Funcionalidades
-
-#### 1. 🔄 **Sistema de Retry Automático**
-
--   **Tentativas automáticas** em caso de falha no envio de email
--   **Backoff exponencial**: Aguarda progressivamente mais tempo entre tentativas
--   **Configurável**: 3 tentativas por padrão, intervalo de 5 segundos
--   **Feedback visual**: Mostra tentativa atual durante o processo
--   **Exemplo**: Se a primeira tentativa falhar, aguarda 5s. Segunda falha? Aguarda 10s.
-
-#### 2. 📊 **Histórico de Envios com SQLite**
-
--   **Banco de dados local** para registrar todos os envios
--   **Informações armazenadas**:
-    -   Data/hora do envio
-    -   Documento (CPF/CNPJ)
-    -   Empresa
-    -   Período
-    -   Destinatários
-    -   Quantidade de arquivos (NFCe e NFe separados)
-    -   Status (sucesso/erro)
-    -   Número de tentativas
-    -   Mensagem de erro (se houver)
-    -   Tempo de processamento
--   **Estatísticas**:
-    -   Total de envios
-    -   Taxa de sucesso
-    -   Total de arquivos enviados
-    -   Último envio
--   **Interface gráfica** para visualização e filtros
--   **Limpeza automática** de registros antigos (90 dias)
-
-#### 3. 📧 **Múltiplos Destinatários**
-
--   **Widget moderno** com tags/chips visuais
--   **Adicione vários emails** pressionando Enter ou clicando no botão +
--   **Validação automática** de formato de email
--   **Remoção fácil**: Clique no X em cada chip
--   **Suporte visual**: Veja todos os destinatários de forma clara
-
-#### 4. 📅 **Sistema de Agendamento**
-
--   **Agende envios** para datas/horas futuras
--   **Envios recorrentes**:
-    -   Diariamente
-    -   Semanalmente
-    -   Mensalmente
--   **Observações** personalizadas para cada agendamento
--   **Gerenciamento**: Visualize, edite e cancele agendamentos
--   **Execução automática**: Sistema verifica e executa agendamentos pendentes
-
-#### 5. 📈 **Janela de Histórico**
-
--   **Interface moderna** com tabela organizada
--   **Filtros avançados**:
-    -   Por status (sucesso/erro)
-    -   Por documento (CPF/CNPJ)
-    -   Por período (hoje, últimos 7/30/90 dias)
--   **Estatísticas em tempo real** em cards visuais
--   **Detalhes de erro**: Clique em um registro com erro para ver detalhes
--   **Exportação** (em desenvolvimento)
-
-### 🔧 Melhorias de Correção de Bugs
-
-#### 1. ❌ **Correção do Loop Infinito**
-
--   **Timeout reduzido** de 30s para 15s nas conexões SMTP
--   **Tratamento robusto** de timeouts e erros de conexão
--   **Mensagens claras** quando há problemas de conectividade
-
-#### 2. 🎨 **Interface Responsiva**
-
--   **Barra de progresso animada** durante processamento
--   **Botão de enviar desabilitado** enquanto processa
--   **Botão de cancelar** aparece durante processamento
--   **Feedback constante** na área de status
-
-#### 3. 🛡️ **Tratamento de Erros Aprimorado**
-
--   **Captura global** de exceções não tratadas
--   **Mensagens descritivas** com tipo de erro e solução
--   **Logs detalhados** com stack trace completo
--   **Alertas visuais** para o usuário
-
-#### 4. ⚙️ **Configuração SSL/TLS Corrigida**
-
--   **Porta 587 agora usa TLS** (corrigido de SSL)
--   **Detecção automática** para Gmail
--   **Mensagens claras** sobre configuração incorreta
-
-### 📁 Novos Arquivos Criados
-
-```
-modules/
-  └── history_manager.py       # Gerenciamento do banco de dados e histórico
-
-gui/
-  ├── email_list_widget.py     # Widget de múltiplos emails com chips
-  ├── history_window.py        # Janela de visualização do histórico
-  └── schedule_window.py       # Janela de agendamento
-
-data/
-  └── history.db               # Banco de dados SQLite (criado automaticamente)
-```
-
-### 🗄️ Estrutura do Banco de Dados
-
-#### Tabela: `envios`
-
--   `id`: ID único
--   `data_envio`: Data/hora do envio
--   `documento`: CPF/CNPJ
--   `empresa`: Nome da empresa
--   `periodo`: Período (YYYY-MM)
--   `destinatarios`: Lista de emails (separados por ;)
--   `total_arquivos`: Total de arquivos
--   `nfce_count`: Quantidade de NFCe
--   `nfe_count`: Quantidade de NFe
--   `status`: Status (sucesso/erro/parcial)
--   `tentativas`: Número de tentativas
--   `erro`: Mensagem de erro (se houver)
--   `arquivo_zip`: Caminho do arquivo ZIP
--   `tempo_processamento`: Tempo em segundos
--   `observacoes`: Observações adicionais
-
-#### Tabela: `agendamentos`
-
--   `id`: ID único
--   `data_criacao`: Data de criação
--   `data_agendada`: Data/hora agendada
--   `documento`: CPF/CNPJ
--   `empresa`: Nome da empresa
--   `periodos`: Lista de períodos (JSON)
--   `destinatarios`: Lista de emails (JSON)
--   `status`: Status (pendente/executado/cancelado)
--   `executado_em`: Data de execução
--   `recorrente`: Se é recorrente (boolean)
--   `recorrencia_tipo`: Tipo (diaria/semanal/mensal)
--   `ativo`: Se está ativo
--   `observacoes`: Observações
-
-### 🎯 Como Usar as Novas Funcionalidades
-
-#### Múltiplos Destinatários
-
-1. No campo "Email(s)", digite um email
-2. Pressione Enter ou clique no botão +
-3. O email aparecerá como um chip azul
-4. Repita para adicionar mais emails
-5. Clique no X para remover
-
-#### Histórico
-
-1. Menu **Ferramentas** → **Histórico de Envios**
-2. Use os filtros para encontrar envios específicos
-3. Clique em registros com erro para ver detalhes
-4. Use **Limpar Antigos** para remover registros de +90 dias
-
-#### Agendamento
-
-1. Menu **Ferramentas** → **Agendar Envio**
-2. Configure data e hora futura
-3. Marque "Envio recorrente" se necessário
-4. Selecione o tipo de recorrência
-5. Adicione observações
-6. Clique em **Agendar**
-
-### ⚙️ Configurações de Retry
-
-No arquivo `config/settings.json`:
-
-```json
-{
-    "retry": {
-        "max_tentativas": 3, // Número máximo de tentativas
-        "intervalo_segundos": 5, // Intervalo base entre tentativas
-        "ativo": true // Se o retry está ativo
-    }
-}
-```
-
-### 📊 Estatísticas do Sistema
-
-Ao abrir o Histórico, você verá:
-
--   🔢 **Total de Envios**: Quantidade total de envios realizados
--   ✅ **Bem-sucedidos**: Envios que foram entregues
--   ❌ **Com Erro**: Envios que falharam
--   📈 **Taxa de Sucesso**: Percentual de sucesso
--   📦 **Arquivos Enviados**: Total de XMLs enviados
-
-### 🚀 Melhorias de Performance
-
--   **Conexões mais rápidas**: Timeout reduzido para 15s
--   **Retry inteligente**: Backoff exponencial evita sobrecarga
--   **Thread separada**: Interface não trava durante processamento
--   **Banco de dados indexado**: Queries rápidas mesmo com muitos registros
-
-### 🛠️ Próximas Funcionalidades (Roadmap)
-
--   [ ] Exportação de histórico para CSV/Excel
--   [ ] Dashboard com gráficos de estatísticas
--   [ ] Notificações por email sobre agendamentos
--   [ ] Backup automático do banco de dados
--   [ ] Templates personalizáveis de email
--   [ ] Suporte a anexos adicionais
+O formato é baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/),
+e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR/).
 
 ---
 
-## 📌 Versão 1.0.0 - Versão Inicial
+## [1.0.0] - 2025-10-17
 
-### Funcionalidades Básicas
+### 🎉 Lançamento Inicial
 
--   Envio de arquivos XML por email
--   Seleção de múltiplos períodos
--   Compactação automática em ZIP
--   Organização por tipo (NFCe/NFe)
--   Configurações SMTP
--   Interface gráfica moderna com CustomTkinter
+#### ✨ Adicionado
+- Sistema completo de envio automático de XMLs do DigiSat Suite G6
+- Interface gráfica moderna com CustomTkinter
+- Suporte a múltiplos destinatários de email
+- Suporte a múltiplos períodos simultâneos
+- Organização automática de arquivos (NF-e e NFC-e em pastas separadas)
+- Sistema de atualizações automáticas via GitHub Releases
+- Histórico completo de envios com banco SQLite
+- Agendamento de envios recorrentes
+- Máscaras automáticas para CPF (11 dígitos) e CNPJ (14 dígitos)
+- Retry automático de emails (até 3 tentativas com backoff exponencial)
+- Widget de lista de emails com chips removíveis
+- Seletor de múltiplos períodos com interface intuitiva
+- Sistema de logs detalhados
+- Validação robusta de formulários
+- Feedback visual em tempo real
+- Dark mode por padrão
+- Compactação inteligente com estrutura de pastas
+
+#### 🔒 Segurança
+- Sistema de variáveis de ambiente (.env)
+- Credenciais protegidas (não versionadas no Git)
+- Arquivo .gitignore configurado
+- Senha de app do Gmail recomendada
+- Validação de formato de email
+- Tratamento seguro de exceções
+
+#### 📚 Documentação
+- README.md completo e detalhado
+- GUIA_ATUALIZACOES.md com passo a passo
+- GUIA_DISTRIBUICAO.md para gerar instalador
+- README_ENV.md para configuração de credenciais
+- CHANGELOG.md (este arquivo)
+- Comentários detalhados no código
+- Docstrings em todos os métodos
+
+#### 🛠️ Infraestrutura
+- Configuração do PyInstaller (XMLSender.spec)
+- Script do Inno Setup (setup_script.iss)
+- Instalador com desinstalação automática de versão antiga
+- Requirements.txt com dependências fixadas
+- Estrutura modular e escalável
+- Separação de responsabilidades (MVC-like)
+
+#### 🐛 Correções
+- Problema de cursor pulando ao digitar CPF/CNPJ
+- Erro de encode de emails múltiplos para SMTP
+- Detecção de variações de nome de pasta NFe (NF-e, NFe, nfe, etc)
+- Layout de emails empilhados verticalmente
+
+#### 🔧 Técnico
+- Python 3.14
+- CustomTkinter 5.2.0
+- Pillow 12.0.0
+- Requests 2.32.5
+- Packaging 25.0
+- SQLite para histórico
+- SMTP com TLS
+- Arquitetura modular
+- Tratamento robusto de erros
+- Threading para operações assíncronas
 
 ---
 
-## 💡 Notas de Atualização
+## [Unreleased]
 
-### Migração de 1.0 para 2.0
+### 🔮 Planejado para Próximas Versões
 
-1. **Banco de dados**: Será criado automaticamente na primeira execução
-2. **Configurações**: Novas chaves adicionadas automaticamente
-3. **Interface**: Campo de email substituído por widget de múltiplos emails
-4. **Compatibilidade**: Mantém retrocompatibilidade com envios de um único email
+#### v1.1.0 (Planejado)
+- [ ] Suporte a exportação de histórico para Excel
+- [ ] Filtros avançados no histórico
+- [ ] Estatísticas visuais (gráficos)
+- [ ] Modo claro (light mode)
+- [ ] Suporte a outros provedores de email (Outlook, etc)
+- [ ] Configuração de templates de email personalizados
+- [ ] Backup automático de configurações
 
-### Requisitos
+#### v1.2.0 (Planejado)
+- [ ] API REST para integração
+- [ ] Modo linha de comando (CLI)
+- [ ] Notificações desktop
+- [ ] Compressão adicional (7z, tar.gz)
+- [ ] Suporte a envio via FTP/SFTP
+- [ ] Multi-idioma (EN, ES)
 
--   Python 3.8+
--   customtkinter 5.2.2+
--   Todas as dependências no `requirements.txt`
+#### v2.0.0 (Futuro)
+- [ ] Suporte a outros sistemas além do DigiSat
+- [ ] Dashboard web
+- [ ] App mobile para monitoramento
+- [ ] Integração com cloud storage (Google Drive, Dropbox)
+- [ ] Sistema de plugins
 
 ---
 
-**Desenvolvido por:** Adriel Teles  
-**Data:** Outubro 2025  
-**Licença:** Proprietária
+## 📝 Tipos de Mudanças
+
+- **Adicionado** - para novas funcionalidades
+- **Modificado** - para mudanças em funcionalidades existentes
+- **Descontinuado** - para funcionalidades que serão removidas
+- **Removido** - para funcionalidades removidas
+- **Corrigido** - para correções de bugs
+- **Segurança** - para vulnerabilidades corrigidas
+
+---
+
+## 🔗 Links
+
+- [Repositório](https://github.com/AdrielTeles97/sender_xml_new_version)
+- [Releases](https://github.com/AdrielTeles97/sender_xml_new_version/releases)
+- [Issues](https://github.com/AdrielTeles97/sender_xml_new_version/issues)
+- [Suporte BEL](https://suportebel.com.br)
+
+---
+
+**Nota:** As datas seguem o formato ISO 8601 (AAAA-MM-DD)
