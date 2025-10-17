@@ -2,8 +2,8 @@
     "smtp": {
         "server": "smtp.gmail.com",
         "port": 587,
-        "username": "adrielt008@gmail.com",
-        "password": "rpyr tpvn ogiz chwe",
+        "username": "belinformatica2019@gmail.com",
+        "password": "ztkn jhra empm qbhk",
         "use_ssl": false
     },
     "cnpj": "19359762000107",
@@ -11,8 +11,8 @@
     "email": "adrielt00@yahoo.com.br",
     "last_period": "2025-01",
     "base_path": "C:\\DigiSat\\SuiteG6\\Servidor\\DFe",
-    "document_id": "00.000.000/0001-00",
-    "document_id_clean": "00000000000100",
+    "document_id": "10.199.836/0001-10",
+    "document_id_clean": "10199836000110",
     "ui": {
         "theme": "dark",
         "color_theme": "blue"

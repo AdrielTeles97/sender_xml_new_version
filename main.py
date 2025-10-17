@@ -166,13 +166,13 @@ class XMLSenderApp:
             'document_id': '',
             'company_name': '',
             'email': '',
-            'base_path': 'C:\\XMLs',
+            'base_path': 'C:\\DigiSat\\SuiteG6\\Servidor\\DFe',
             'smtp': {
                 'server': 'smtp.gmail.com',
                 'port': 587,
-                'username': '',
-                'password': '',
-                'use_tls': True
+                'username': 'belinformatica2019@gmail.com',
+                'password': 'ztkn jhra empm qbhk',
+                'use_ssl': False
             },
             'ui': {
                 'theme': 'dark',
@@ -185,6 +185,47 @@ class XMLSenderApp:
             if key not in self.config:
                 self.config[key] = value
                 self.logger.info(f"Configuração padrão adicionada: {key}")
+    
+    def _check_updates_on_startup(self):
+        """Verifica atualizações automaticamente na inicialização (em thread separada)"""
+        import threading
+        
+        def check_in_background():
+            try:
+                from modules.update_checker import UpdateChecker
+                from gui.update_window import UpdateWindow
+                
+                # Criar verificador
+                checker = UpdateChecker(
+                    repo_owner="adrielteles",  # ← ALTERAR para seu usuário do GitHub
+                    repo_name="sender_xml_new_version",  # ← ALTERAR para nome do repositório
+                    current_version=self.app_version
+                )
+                
+                # Verificar atualizações
+                result = checker.check_for_updates()
+                
+                # Se houver atualização disponível, mostrar janela
+                if result.get('has_update') and not result.get('error'):
+                    self.root.after(0, lambda: self._show_update_notification(result, checker))
+                    
+            except Exception as e:
+                self.logger.warning(f"Erro ao verificar atualizações na inicialização: {e}")
+        
+        # Executar em thread separada para não bloquear a UI
+        thread = threading.Thread(target=check_in_background, daemon=True)
+        thread.start()
+    
+    def _show_update_notification(self, result, checker):
+        """Mostra notificação de atualização disponível"""
+        try:
+            from gui.update_window import UpdateWindow
+            
+            update_window = UpdateWindow(self.root, result)
+            update_window.on_download = checker.download_update
+            self.logger.info(f"Nova versão disponível: {result['latest_version']}")
+        except Exception as e:
+            self.logger.error(f"Erro ao mostrar janela de atualização: {e}")
     
     def on_exit(self):
         """Ação ao fechar a aplicação"""
@@ -233,6 +274,9 @@ class XMLSenderApp:
             
             # Carregar configurações padrão
             self._load_default_config()
+            
+            # Verificar atualizações automaticamente após 3 segundos
+            self.root.after(3000, self._check_updates_on_startup)
             
             self.logger.info("Aplicação iniciada com sucesso")
             self.root.mainloop()

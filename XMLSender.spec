@@ -1,18 +1,28 @@
 # -*- mode: python ; coding: utf-8 -*-
 
+block_cipher = None
 
 a = Analysis(
     ['main.py'],
     pathex=[],
     binaries=[],
-    datas=[],
-    hiddenimports=[],
+    datas=[
+        ('assets/icon.ico', 'assets'),  # Incluir ícone
+    ],
+    hiddenimports=[
+        'requests',
+        'packaging',
+        'packaging.version',
+        'packaging.specifiers',
+        'customtkinter',
+        'PIL._tkinter_finder',
+    ],
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
     excludes=[],
     noarchive=False,
-    optimize=0,
+    optimize=2,
 )
 pyz = PYZ(a.pure)
 

@@ -316,6 +316,8 @@ class MainWindow:
         help_menu = Menu(menubar, tearoff=0)
         help_menu.add_command(label="Ajuda", command=self._show_help)
         help_menu.add_separator()
+        help_menu.add_command(label="🔄 Verificar Atualizações", command=self._check_for_updates)
+        help_menu.add_separator()
         help_menu.add_command(label="Sobre", command=self._show_about)
         menubar.add_cascade(label="Ajuda", menu=help_menu)
     
@@ -862,3 +864,62 @@ class MainWindow:
         """Limpa todos os logs da área de status"""
         self.status_text.delete("1.0", "end")
         self._add_status("✅ Logs limpos")
+    
+    def _check_for_updates(self):
+        """Verifica se há atualizações disponíveis"""
+        from modules.update_checker import UpdateChecker
+        from gui.update_window import UpdateWindow
+        import threading
+        
+        def check_in_thread():
+            # Criar verificador
+            # IMPORTANTE: Altere 'repo_owner' e 'repo_name' para seu repositório GitHub
+            checker = UpdateChecker(
+                repo_owner="adrielteles",  # ← ALTERAR para seu usuário do GitHub
+                repo_name="sender_xml_new_version",  # ← ALTERAR para nome do seu repositório
+                current_version=self.app_version
+            )
+            
+            # Verificar atualizações
+            result = checker.check_for_updates()
+            
+            # Atualizar na thread principal (UI)
+            self.root.after(0, lambda: self._show_update_result(result, checker))
+        
+        # Mostrar loading
+        self._add_status("🔄 Verificando atualizações...")
+        
+        # Executar em thread separada
+        thread = threading.Thread(target=check_in_thread, daemon=True)
+        thread.start()
+    
+    def _show_update_result(self, result, checker):
+        """
+        Mostra o resultado da verificação de atualização.
+        
+        Args:
+            result (dict): Resultado da verificação
+            checker (UpdateChecker): Instância do verificador
+        """
+        if result.get('error'):
+            messagebox.showwarning(
+                "Verificação de Atualizações",
+                f"Não foi possível verificar atualizações:\n\n{result['error']}"
+            )
+            self._add_status("❌ Falha ao verificar atualizações")
+            return
+        
+        if result['has_update']:
+            # Importar aqui para evitar import circular
+            from gui.update_window import UpdateWindow
+            
+            # Abrir janela de atualização
+            update_window = UpdateWindow(self.root, result)
+            update_window.on_download = checker.download_update
+            self._add_status(f"✅ Nova versão disponível: {result['latest_version']}")
+        else:
+            messagebox.showinfo(
+                "Verificação de Atualizações",
+                f"Você está usando a versão mais recente!\n\nVersão: {result['latest_version']}"
+            )
+            self._add_status("✅ Aplicação está atualizada")

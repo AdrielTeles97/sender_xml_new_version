@@ -131,11 +131,20 @@ class PeriodSelector(ctk.CTkFrame):
         # Se houver apenas um período, ocultar o botão de remoção
         if len(self.periods) <= 1:
             for period in self.periods:
-                period["remove_button"].pack_forget()  # Ocultar
+                try:
+                    period["remove_button"].pack_forget()  # Ocultar
+                except:
+                    pass  # Ignorar se já estiver oculto
         else:
             # Se houver mais de um período, mostrar todos os botões de remoção
             for period in self.periods:
-                period["remove_button"].pack(side="right", padx=5)  # Mostrar
+                # Primeiro remove o pack anterior (se houver) para evitar duplicação
+                try:
+                    period["remove_button"].pack_forget()
+                except:
+                    pass
+                # Depois empacota novamente
+                period["remove_button"].pack(side="right", padx=5)
     
     def _remove_period_by_id(self, period_id):
         """

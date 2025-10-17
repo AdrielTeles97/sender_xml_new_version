@@ -121,7 +121,7 @@ class EmailListWidget(ctk.CTkFrame):
             fg_color=("#3B8ED0", "#1F6AA5"),
             corner_radius=15
         )
-        chip_frame.pack(side="left", padx=3, pady=3)
+        chip_frame.pack(side="top", anchor="w", padx=3, pady=3, fill="x")
         
         # Label do email
         email_label = ctk.CTkLabel(

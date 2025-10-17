@@ -1,11 +1,12 @@
 ; Script para criar instalador do aplicativo "Envio de Arquivos XML"
-; Versão corrigida - resolve problemas de flags
+; Versão com Sistema de Atualizações Automáticas
 #define MyAppName "Envio de Arquivos XML"
-#define MyAppVersion "2.0.0"
+#define MyAppVersion "1.0.0"
 #define MyAppPublisher "Adriel Teles"
 #define MyAppURL "http://www.suportebel.com.br/"
 #define MyAppExeName "XMLSender.exe"
-#define SourcePath "C:\Users\Adriel\Downloads\sender_xml_new_version\dist\"
+#define BaseDir GetEnv('USERPROFILE') + "\OneDrive\Desktop\sender_xml_new_version"
+#define SourcePath BaseDir + "\dist\"
 
 [Setup]
 AppId={{B27F1C11-8A38-4F35-9D35-9C63ED6CF9C5}
@@ -18,18 +19,22 @@ AppUpdatesURL={#MyAppURL}
 DefaultDirName={localappdata}\{#MyAppName}
 DisableProgramGroupPage=no
 DefaultGroupName={#MyAppName}
-OutputDir=C:\Users\Adriel\Downloads\sender_xml_new_version\output
+OutputDir={#BaseDir}\output
 OutputBaseFilename=EnvioArquivosXML_Setup_v{#MyAppVersion}
 Compression=lzma
 SolidCompression=yes
 PrivilegesRequired=lowest
 PrivilegesRequiredOverridesAllowed=commandline
 WizardStyle=modern
-SetupIconFile=C:\Users\Adriel\Downloads\sender_xml_new_version\assets\icon.ico
-LicenseFile=C:\Users\Adriel\Downloads\sender_xml_new_version\license.txt
+SetupIconFile={#BaseDir}\assets\icon.ico
+LicenseFile={#BaseDir}\license.txt
 AppCopyright=Copyright © {#MyAppPublisher} 2025
 AppContact={#MyAppURL}
 UninstallDisplayIcon={app}\{#MyAppExeName}
+; IMPORTANTE: Desinstala versão antiga automaticamente
+UninstallRestartComputer=no
+CloseApplications=yes
+RestartApplications=no
 
 [Languages]
 Name: "brazilianportuguese"; MessagesFile: "compiler:Languages\BrazilianPortuguese.isl"
@@ -47,8 +52,8 @@ Source: "{#SourcePath}*.txt"; DestDir: "{app}"; Flags: ignoreversion skipifsourc
 
 
 ; Arquivos de configuração do projeto original (backup)
-Source: "C:\Users\Adriel\Downloads\sender_xml_new_version\config\*"; DestDir: "{app}\config"; Flags: ignoreversion onlyifdoesntexist skipifsourcedoesntexist
-Source: "C:\Users\Adriel\Downloads\sender_xml_new_version\assets\*"; DestDir: "{app}\assets"; Flags: ignoreversion onlyifdoesntexist skipifsourcedoesntexist
+Source: "{#BaseDir}\config\*"; DestDir: "{app}\config"; Flags: ignoreversion onlyifdoesntexist skipifsourcedoesntexist
+Source: "{#BaseDir}\assets\*"; DestDir: "{app}\assets"; Flags: ignoreversion onlyifdoesntexist skipifsourcedoesntexist
 
 [Dirs]
 ; Criar diretórios necessários com permissões corretas
@@ -88,6 +93,43 @@ Type: filesandordirs; Name: "{app}\logs"
 Type: filesandordirs; Name: "{app}\temp"
 
 [Code]
+// Desinstalar versão anterior se existir
+function UninstallPreviousVersion(): Boolean;
+var
+  UninstallPath: String;
+  UninstallExe: String;
+  ResultCode: Integer;
+begin
+  Result := True;
+  
+  // Procurar no registro a versão anterior
+  if RegQueryStringValue(HKEY_CURRENT_USER, 
+     'Software\Microsoft\Windows\CurrentVersion\Uninstall\{B27F1C11-8A38-4F35-9D35-9C63ED6CF9C5}_is1',
+     'UninstallString', UninstallPath) then
+  begin
+    UninstallExe := RemoveQuotes(UninstallPath);
+    if FileExists(UninstallExe) then
+    begin
+      if MsgBox('Uma versão anterior foi detectada. Deseja desinstalá-la antes de continuar?' + #13#10#13#10 +
+                'Recomendado para garantir uma instalação limpa.',
+                mbConfirmation, MB_YESNO) = IDYES then
+      begin
+        // Executar desinstalador silencioso
+        if Exec(UninstallExe, '/VERYSILENT /NORESTART /SUPPRESSMSGBOXES', '', SW_HIDE, 
+                ewWaitUntilTerminated, ResultCode) then
+        begin
+          Result := True;
+        end
+        else
+        begin
+          MsgBox('Falha ao desinstalar a versão anterior. Continuando mesmo assim...', 
+                 mbInformation, MB_OK);
+        end;
+      end;
+    end;
+  end;
+end;
+
 // Função executada antes da instalação
 function InitializeSetup(): Boolean;
 var
@@ -101,10 +143,14 @@ begin
     MsgBox('ERRO: O arquivo executável não foi encontrado!' + #13#10 + 
            'Caminho esperado: ' + ExePath + #13#10#13#10 + 
            'Execute primeiro o build da aplicação com PyInstaller.' + #13#10 + 
-           'Comando: pyinstaller --windowed --onefile --name "main" main.py', 
+           'Comando: pyinstaller XMLSender.spec', 
            mbError, MB_OK);
     Result := False;
+    Exit;
   end;
+  
+  // Desinstalar versão anterior automaticamente
+  UninstallPreviousVersion();
 end;
 
 // Função executada após a instalação
@@ -125,13 +171,13 @@ begin
                       '  "document_id": "",' + #13#10 +
                       '  "company_name": "",' + #13#10 +
                       '  "email": "",' + #13#10 +
-                      '  "base_path": "C:\\XMLs",' + #13#10 +
+                      '  "base_path": "C:\\DigiSat\\SuiteG6\\Servidor\\DFe",' + #13#10 +
                       '  "smtp": {' + #13#10 +
                       '    "server": "smtp.gmail.com",' + #13#10 +
                       '    "port": 587,' + #13#10 +
-                      '    "username": "",' + #13#10 +
-                      '    "password": "",' + #13#10 +
-                      '    "use_tls": true' + #13#10 +
+                      '    "username": "belinformatica2019@gmail.com",' + #13#10 +
+                      '    "password": "ztkn jhra empm qbhk",' + #13#10 +
+                      '    "use_ssl": false' + #13#10 +
                       '  }' + #13#10 +
                       '}';
       

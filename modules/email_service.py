@@ -34,7 +34,7 @@ class EmailService:
         Envia um email com anexos opcionais e formatação HTML.
         
         Args:
-            to_email (str): Email do destinatário
+            to_email (str ou list): Email(s) do(s) destinatário(s)
             subject (str): Assunto do email
             body (str): Corpo do email (texto simples)
             attachments (list, optional): Lista de caminhos de arquivos para anexar
@@ -49,11 +49,19 @@ class EmailService:
             # Validar configurações
             self._validate_config()
             
+            # Normalizar to_email para lista e string
+            if isinstance(to_email, list):
+                to_email_list = to_email
+                to_email_str = ', '.join(to_email)  # Para o header
+            else:
+                to_email_list = [to_email]
+                to_email_str = to_email
+            
             # Criar mensagem com partes alternativas
             # Mudança: Usando 'mixed' em vez de 'alternative' para suportar anexos
             msg = MIMEMultipart('mixed')
             msg['From'] = self.smtp_config['username']
-            msg['To'] = to_email
+            msg['To'] = to_email_str  # Header pode ter vírgulas
             msg['Subject'] = subject
             
             # Criar a parte alternativa para texto/html
@@ -81,11 +89,11 @@ class EmailService:
             # Conectar ao servidor SMTP
             server = self._connect_to_smtp()
             
-            # Enviar email
-            server.sendmail(msg['From'], to_email, msg.as_string())
+            # Enviar email - IMPORTANTE: sendmail() precisa de uma LISTA de emails
+            server.sendmail(msg['From'], to_email_list, msg.as_string())
             server.quit()
             
-            self.logger.info(f"Email enviado com sucesso para {to_email}")
+            self.logger.info(f"Email enviado com sucesso para {to_email_str}")
             return True
             
         except Exception as e:
@@ -113,8 +121,10 @@ class EmailService:
         """
         # Suportar múltiplos destinatários
         if isinstance(to_email, list):
-            to_email_str = ', '.join(to_email)
+            to_email_list = to_email  # Manter como lista
+            to_email_str = ', '.join(to_email)  # Apenas para log
         else:
+            to_email_list = [to_email]  # Converter para lista
             to_email_str = to_email
         
         last_error = None
@@ -127,9 +137,9 @@ class EmailService:
                 if on_retry_callback:
                     on_retry_callback(tentativa, self.max_retries)
                 
-                # Tentar enviar
+                # Tentar enviar - passar a lista de emails
                 result = self.send_email(
-                    to_email_str, 
+                    to_email_list, 
                     subject, 
                     body, 
                     attachments,

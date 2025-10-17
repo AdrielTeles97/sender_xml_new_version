@@ -734,3 +734,307 @@
 2025-10-16 17:54:32,338 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
 2025-10-16 17:54:32,338 - XMLSender - INFO - Configurações salvas com sucesso
 2025-10-16 17:54:32,338 - XMLSender - INFO - Aplicação encerrada
+2025-10-17 10:58:04,448 - XMLSender - INFO - Iniciando aplicação Envio de Arquivos XML v1.0.0
+2025-10-17 10:58:04,448 - XMLSender.ConfigManager - INFO - Configurações carregadas de config/settings.json
+2025-10-17 10:58:04,866 - XMLSender - INFO - Ícone da aplicação carregado: assets/icon.ico
+2025-10-17 10:58:04,867 - XMLSender.HistoryManager - INFO - Banco de dados inicializado: data/history.db
+2025-10-17 10:58:05,617 - XMLSender - INFO - Aplicação iniciada com sucesso
+2025-10-17 10:58:09,151 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-17 10:58:09,283 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-17 10:58:09,756 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-17 10:58:09,971 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-17 10:58:10,134 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-17 10:58:14,125 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-17 10:58:14,430 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-17 10:58:14,586 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-17 10:58:15,567 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-17 10:58:16,016 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-17 10:58:16,466 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-17 10:58:16,687 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-17 10:58:16,961 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-17 10:58:17,075 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-17 10:58:47,059 - XMLSender.XMLFinder - INFO - Buscando arquivos XML para Doc ID=10199836000110, período=202510
+2025-10-17 10:58:47,059 - XMLSender.XMLFinder - INFO - Verificando caminho NFCe: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFCe\202510\Autorizados
+2025-10-17 10:58:47,060 - XMLSender.XMLFinder - WARNING - Diretório não encontrado: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFCe\202510\Autorizados
+2025-10-17 10:58:47,060 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NF-e\202510\Autorizados
+2025-10-17 10:58:47,060 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFe\202510\Autorizados
+2025-10-17 10:58:47,060 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\nfe\202510\Autorizados
+2025-10-17 10:58:47,060 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NF_e\202510\Autorizados
+2025-10-17 10:58:47,061 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFE\202510\Autorizados
+2025-10-17 10:58:47,061 - XMLSender.XMLFinder - INFO - Tentando busca flexível em: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado
+2025-10-17 10:58:47,061 - XMLSender.XMLFinder - WARNING - Nenhum diretório NFe encontrado para o período 202510
+2025-10-17 10:58:47,061 - XMLSender.XMLFinder - INFO - === DEBUG NFe - Estrutura de diretórios ===
+2025-10-17 10:58:47,061 - XMLSender.XMLFinder - INFO - Base path: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado
+2025-10-17 10:58:47,061 - XMLSender.XMLFinder - WARNING - Base path não existe: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado
+2025-10-17 11:01:09,148 - XMLSender.XMLFinder - INFO - Buscando arquivos XML para Doc ID=10199836000110, período=202510
+2025-10-17 11:01:09,148 - XMLSender.XMLFinder - INFO - Verificando caminho NFCe: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFCe\202510\Autorizados
+2025-10-17 11:01:09,148 - XMLSender.XMLFinder - WARNING - Diretório não encontrado: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFCe\202510\Autorizados
+2025-10-17 11:01:09,148 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NF-e\202510\Autorizados
+2025-10-17 11:01:09,149 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFe\202510\Autorizados
+2025-10-17 11:01:09,149 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\nfe\202510\Autorizados
+2025-10-17 11:01:09,149 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NF_e\202510\Autorizados
+2025-10-17 11:01:09,149 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFE\202510\Autorizados
+2025-10-17 11:01:09,149 - XMLSender.XMLFinder - INFO - Tentando busca flexível em: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado
+2025-10-17 11:01:09,150 - XMLSender.XMLFinder - INFO - Subdiretórios encontrados contendo 'nf': ['NFCe', 'NFe']
+2025-10-17 11:01:09,150 - XMLSender.XMLFinder - INFO - Testando subdiretório encontrado: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFe\202510\Autorizados
+2025-10-17 11:01:09,150 - XMLSender.XMLFinder - WARNING - Nenhum diretório NFe encontrado para o período 202510
+2025-10-17 11:01:09,150 - XMLSender.XMLFinder - INFO - === DEBUG NFe - Estrutura de diretórios ===
+2025-10-17 11:01:09,150 - XMLSender.XMLFinder - INFO - Base path: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado
+2025-10-17 11:01:09,151 - XMLSender.XMLFinder - INFO - Subdiretórios em 'Enviado': ['NFCe', 'NFe']
+2025-10-17 11:01:09,151 - XMLSender.XMLFinder - INFO -   Verificando: NFCe
+2025-10-17 11:01:09,151 - XMLSender.XMLFinder - INFO -     Conteúdo: ['Autorizados']
+2025-10-17 11:01:09,151 - XMLSender.XMLFinder - INFO -   Verificando: NFe
+2025-10-17 11:01:09,152 - XMLSender.XMLFinder - INFO -     Conteúdo: ['Autorizados']
+2025-10-17 11:01:13,301 - XMLSender - INFO - Iniciando processo de encerramento da aplicação
+2025-10-17 11:01:13,302 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-17 11:01:13,302 - XMLSender - INFO - Configurações salvas com sucesso
+2025-10-17 11:01:13,302 - XMLSender - INFO - Aplicação encerrada
+2025-10-17 11:01:15,083 - XMLSender - INFO - Iniciando aplicação Envio de Arquivos XML v1.0.0
+2025-10-17 11:01:15,089 - XMLSender.ConfigManager - INFO - Configurações carregadas de config/settings.json
+2025-10-17 11:01:15,146 - XMLSender - INFO - Ícone da aplicação carregado: assets/icon.ico
+2025-10-17 11:01:15,147 - XMLSender.HistoryManager - INFO - Banco de dados inicializado: data/history.db
+2025-10-17 11:01:15,610 - XMLSender - INFO - Aplicação iniciada com sucesso
+2025-10-17 11:01:20,233 - XMLSender - INFO - Iniciando processo de encerramento da aplicação
+2025-10-17 11:01:20,234 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-17 11:01:20,234 - XMLSender - INFO - Configurações salvas com sucesso
+2025-10-17 11:01:20,234 - XMLSender - INFO - Aplicação encerrada
+2025-10-17 11:01:23,835 - XMLSender - INFO - Iniciando aplicação Envio de Arquivos XML v1.0.0
+2025-10-17 11:01:23,835 - XMLSender.ConfigManager - INFO - Configurações carregadas de config/settings.json
+2025-10-17 11:01:23,909 - XMLSender - INFO - Ícone da aplicação carregado: assets/icon.ico
+2025-10-17 11:01:23,910 - XMLSender.HistoryManager - INFO - Banco de dados inicializado: data/history.db
+2025-10-17 11:01:24,362 - XMLSender - INFO - Aplicação iniciada com sucesso
+2025-10-17 11:01:37,189 - XMLSender.XMLFinder - INFO - Buscando arquivos XML para Doc ID=10199836000110, período=202510
+2025-10-17 11:01:37,190 - XMLSender.XMLFinder - INFO - Verificando caminho NFCe: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFCe\202510\Autorizados
+2025-10-17 11:01:37,190 - XMLSender.XMLFinder - WARNING - Diretório não encontrado: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFCe\202510\Autorizados
+2025-10-17 11:01:37,190 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NF-e\202510\Autorizados
+2025-10-17 11:01:37,191 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFe\202510\Autorizados
+2025-10-17 11:01:37,191 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\nfe\202510\Autorizados
+2025-10-17 11:01:37,191 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NF_e\202510\Autorizados
+2025-10-17 11:01:37,191 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFE\202510\Autorizados
+2025-10-17 11:01:37,191 - XMLSender.XMLFinder - INFO - Tentando busca flexível em: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado
+2025-10-17 11:01:37,192 - XMLSender.XMLFinder - INFO - Subdiretórios encontrados contendo 'nf': ['NFCe', 'NFe']
+2025-10-17 11:01:37,192 - XMLSender.XMLFinder - INFO - Testando subdiretório encontrado: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFe\202510\Autorizados
+2025-10-17 11:01:37,192 - XMLSender.XMLFinder - WARNING - Nenhum diretório NFe encontrado para o período 202510
+2025-10-17 11:01:37,192 - XMLSender.XMLFinder - INFO - === DEBUG NFe - Estrutura de diretórios ===
+2025-10-17 11:01:37,192 - XMLSender.XMLFinder - INFO - Base path: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado
+2025-10-17 11:01:37,193 - XMLSender.XMLFinder - INFO - Subdiretórios em 'Enviado': ['NFCe', 'NFe']
+2025-10-17 11:01:37,193 - XMLSender.XMLFinder - INFO -   Verificando: NFCe
+2025-10-17 11:01:37,193 - XMLSender.XMLFinder - INFO -     Conteúdo: ['Autorizados']
+2025-10-17 11:01:37,193 - XMLSender.XMLFinder - INFO -   Verificando: NFe
+2025-10-17 11:01:37,193 - XMLSender.XMLFinder - INFO -     Conteúdo: ['Autorizados']
+2025-10-17 11:05:19,422 - XMLSender.XMLFinder - INFO - Buscando arquivos XML para Doc ID=10199836000110, período=202510
+2025-10-17 11:05:19,422 - XMLSender.XMLFinder - INFO - Verificando caminho NFCe: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFCe\202510\Autorizados
+2025-10-17 11:05:19,423 - XMLSender.XMLFinder - INFO - Arquivos XML encontrados em C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFCe\202510\Autorizados: ['15250919359762000107650010000005591725125490-NFe.xml']
+2025-10-17 11:05:19,423 - XMLSender.XMLFinder - INFO - Encontrados 1 arquivos NFCe
+2025-10-17 11:05:19,423 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NF-e\202510\Autorizados
+2025-10-17 11:05:19,423 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFe\202510\Autorizados
+2025-10-17 11:05:19,423 - XMLSender.XMLFinder - INFO - Arquivos XML encontrados em C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFe\202510\Autorizados: ['15250919359762000107650010000005591725125490-NFe.xml']
+2025-10-17 11:05:19,424 - XMLSender.XMLFinder - INFO - Encontrados 1 arquivos NFe em C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFe\202510\Autorizados
+2025-10-17 11:05:19,428 - XMLSender.ZipService - INFO - Adicionando 1 arquivos NFCe na pasta NFCe/
+2025-10-17 11:05:19,429 - XMLSender.ZipService - INFO - Adicionando 1 arquivos NFe na pasta NFe/
+2025-10-17 11:05:19,434 - XMLSender.ZipService - INFO - Arquivo ZIP organizado criado em temp/10199836000110_202510_xmls.zip com 2 arquivos
+2025-10-17 11:05:19,447 - XMLSender.ZipService - INFO - 📦 Estrutura do ZIP (2 arquivos total):
+2025-10-17 11:05:19,447 - XMLSender.ZipService - INFO -   📁 NFCe/ (1 arquivos)
+2025-10-17 11:05:19,447 - XMLSender.ZipService - INFO -     📄 15250919359762000107650010000005591725125490-NFe.xml
+2025-10-17 11:05:19,448 - XMLSender.ZipService - INFO -   📁 NFe/ (1 arquivos)
+2025-10-17 11:05:19,448 - XMLSender.ZipService - INFO -     📄 15250919359762000107650010000005591725125490-NFe.xml
+2025-10-17 11:05:19,455 - XMLSender.EmailService - INFO - Tentativa 1/3 de envio para adrielt00@yahoo.com.br
+2025-10-17 11:05:24,283 - XMLSender.EmailService - INFO - Email enviado com sucesso para adrielt00@yahoo.com.br
+2025-10-17 11:05:24,283 - XMLSender.EmailService - INFO - Email enviado com sucesso na tentativa 1
+2025-10-17 11:05:24,288 - XMLSender.HistoryManager - INFO - Envio registrado no histórico: ID 1
+2025-10-17 11:07:52,944 - XMLSender.XMLFinder - INFO - Buscando arquivos XML para Doc ID=10199836000110, período=202510
+2025-10-17 11:07:52,944 - XMLSender.XMLFinder - INFO - Verificando caminho NFCe: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFCe\202510\Autorizados
+2025-10-17 11:07:52,945 - XMLSender.XMLFinder - INFO - Arquivos XML encontrados em C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFCe\202510\Autorizados: ['15250919359762000107650010000005591725125490-NFe.xml']
+2025-10-17 11:07:52,945 - XMLSender.XMLFinder - INFO - Encontrados 1 arquivos NFCe
+2025-10-17 11:07:52,945 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NF-e\202510\Autorizados
+2025-10-17 11:07:52,946 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFe\202510\Autorizados
+2025-10-17 11:07:52,946 - XMLSender.XMLFinder - INFO - Arquivos XML encontrados em C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFe\202510\Autorizados: ['15250919359762000107650010000005591725125490-NFe.xml']
+2025-10-17 11:07:52,946 - XMLSender.XMLFinder - INFO - Encontrados 1 arquivos NFe em C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFe\202510\Autorizados
+2025-10-17 11:07:52,950 - XMLSender.ZipService - INFO - Adicionando 1 arquivos NFCe na pasta NFCe/
+2025-10-17 11:07:52,951 - XMLSender.ZipService - INFO - Adicionando 1 arquivos NFe na pasta NFe/
+2025-10-17 11:07:52,958 - XMLSender.ZipService - INFO - Arquivo ZIP organizado criado em temp/10199836000110_202510_xmls.zip com 2 arquivos
+2025-10-17 11:07:52,972 - XMLSender.ZipService - INFO - 📦 Estrutura do ZIP (2 arquivos total):
+2025-10-17 11:07:52,972 - XMLSender.ZipService - INFO -   📁 NFCe/ (1 arquivos)
+2025-10-17 11:07:52,973 - XMLSender.ZipService - INFO -     📄 15250919359762000107650010000005591725125490-NFe.xml
+2025-10-17 11:07:52,973 - XMLSender.ZipService - INFO -   📁 NFe/ (1 arquivos)
+2025-10-17 11:07:52,973 - XMLSender.ZipService - INFO -     📄 15250919359762000107650010000005591725125490-NFe.xml
+2025-10-17 11:07:52,982 - XMLSender.EmailService - INFO - Tentativa 1/3 de envio para adrielt00@yahoo.com.br, adrielt008@gmail.com
+2025-10-17 11:07:55,516 - XMLSender.EmailService - ERROR - Erro ao enviar email: {'adrielt00@yahoo.com.br, adrielt008@gmail.com': (553, b'5.1.3 The recipient address <adrielt00@yahoo.com.br, adrielt008@gmail.com>\n5.1.3 is not a valid RFC 5321 address. For more information, go to\n5.1.3  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.1.3 specifications. d9443c01a7336-29099a7de2fsm65131605ad.58 - gsmtp')}
+2025-10-17 11:07:55,517 - XMLSender.EmailService - INFO - Tentativa 2/3 de envio para adrielt00@yahoo.com.br, adrielt008@gmail.com
+2025-10-17 11:07:58,391 - XMLSender.EmailService - ERROR - Erro ao enviar email: {'adrielt00@yahoo.com.br, adrielt008@gmail.com': (553, b'5.1.3 The recipient address <adrielt00@yahoo.com.br, adrielt008@gmail.com>\n5.1.3 is not a valid RFC 5321 address. For more information, go to\n5.1.3  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.1.3 specifications. d9443c01a7336-290ad0004e1sm57260725ad.7 - gsmtp')}
+2025-10-17 11:07:58,392 - XMLSender.EmailService - INFO - Tentativa 3/3 de envio para adrielt00@yahoo.com.br, adrielt008@gmail.com
+2025-10-17 11:08:01,490 - XMLSender.EmailService - ERROR - Erro ao enviar email: {'adrielt00@yahoo.com.br, adrielt008@gmail.com': (553, b'5.1.3 The recipient address <adrielt00@yahoo.com.br, adrielt008@gmail.com>\n5.1.3 is not a valid RFC 5321 address. For more information, go to\n5.1.3  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.1.3 specifications. d2e1a72fcca58-7992d0965c3sm25983304b3a.52 - gsmtp')}
+2025-10-17 11:08:01,491 - XMLSender.EmailService - ERROR - Falha ao enviar email após 3 tentativas: Falha no envio (sem exceção específica)
+2025-10-17 11:08:01,496 - XMLSender.HistoryManager - INFO - Envio registrado no histórico: ID 2
+2025-10-17 11:08:01,503 - XMLSender.XMLFinder - INFO - Buscando arquivos XML para Doc ID=10199836000110, período=202509
+2025-10-17 11:08:01,503 - XMLSender.XMLFinder - INFO - Verificando caminho NFCe: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFCe\202509\Autorizados
+2025-10-17 11:08:01,504 - XMLSender.XMLFinder - WARNING - Diretório não encontrado: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFCe\202509\Autorizados
+2025-10-17 11:08:01,504 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NF-e\202509\Autorizados
+2025-10-17 11:08:01,504 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFe\202509\Autorizados
+2025-10-17 11:08:01,504 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\nfe\202509\Autorizados
+2025-10-17 11:08:01,505 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NF_e\202509\Autorizados
+2025-10-17 11:08:01,505 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFE\202509\Autorizados
+2025-10-17 11:08:01,505 - XMLSender.XMLFinder - INFO - Tentando busca flexível em: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado
+2025-10-17 11:08:01,506 - XMLSender.XMLFinder - INFO - Subdiretórios encontrados contendo 'nf': ['NFCe', 'NFe']
+2025-10-17 11:08:01,506 - XMLSender.XMLFinder - INFO - Testando subdiretório encontrado: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFe\202509\Autorizados
+2025-10-17 11:08:01,506 - XMLSender.XMLFinder - WARNING - Nenhum diretório NFe encontrado para o período 202509
+2025-10-17 11:08:01,506 - XMLSender.XMLFinder - INFO - === DEBUG NFe - Estrutura de diretórios ===
+2025-10-17 11:08:01,507 - XMLSender.XMLFinder - INFO - Base path: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado
+2025-10-17 11:08:01,507 - XMLSender.XMLFinder - INFO - Subdiretórios em 'Enviado': ['NFCe', 'NFe']
+2025-10-17 11:08:01,507 - XMLSender.XMLFinder - INFO -   Verificando: NFCe
+2025-10-17 11:08:01,508 - XMLSender.XMLFinder - INFO -     Conteúdo: ['202510']
+2025-10-17 11:08:01,509 - XMLSender.XMLFinder - INFO -   Verificando: NFe
+2025-10-17 11:08:01,509 - XMLSender.XMLFinder - INFO -     Conteúdo: ['202510']
+2025-10-17 11:08:21,978 - XMLSender.XMLFinder - INFO - Buscando arquivos XML para Doc ID=10199836000110, período=202510
+2025-10-17 11:08:21,979 - XMLSender.XMLFinder - INFO - Verificando caminho NFCe: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFCe\202510\Autorizados
+2025-10-17 11:08:21,979 - XMLSender.XMLFinder - INFO - Arquivos XML encontrados em C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFCe\202510\Autorizados: ['15250919359762000107650010000005591725125490-NFe.xml']
+2025-10-17 11:08:21,979 - XMLSender.XMLFinder - INFO - Encontrados 1 arquivos NFCe
+2025-10-17 11:08:21,979 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NF-e\202510\Autorizados
+2025-10-17 11:08:21,979 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFe\202510\Autorizados
+2025-10-17 11:08:21,980 - XMLSender.XMLFinder - INFO - Arquivos XML encontrados em C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFe\202510\Autorizados: ['15250919359762000107650010000005591725125490-NFe.xml']
+2025-10-17 11:08:21,980 - XMLSender.XMLFinder - INFO - Encontrados 1 arquivos NFe em C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFe\202510\Autorizados
+2025-10-17 11:08:21,983 - XMLSender.ZipService - INFO - Adicionando 1 arquivos NFCe na pasta NFCe/
+2025-10-17 11:08:21,984 - XMLSender.ZipService - INFO - Adicionando 1 arquivos NFe na pasta NFe/
+2025-10-17 11:08:21,985 - XMLSender.ZipService - INFO - Arquivo ZIP organizado criado em temp/10199836000110_202510_xmls.zip com 2 arquivos
+2025-10-17 11:08:21,998 - XMLSender.ZipService - INFO - 📦 Estrutura do ZIP (2 arquivos total):
+2025-10-17 11:08:21,998 - XMLSender.ZipService - INFO -   📁 NFCe/ (1 arquivos)
+2025-10-17 11:08:21,998 - XMLSender.ZipService - INFO -     📄 15250919359762000107650010000005591725125490-NFe.xml
+2025-10-17 11:08:21,998 - XMLSender.ZipService - INFO -   📁 NFe/ (1 arquivos)
+2025-10-17 11:08:21,998 - XMLSender.ZipService - INFO -     📄 15250919359762000107650010000005591725125490-NFe.xml
+2025-10-17 11:08:22,006 - XMLSender.EmailService - INFO - Tentativa 1/3 de envio para adrielt00@yahoo.com.br, adrielt008@gmail.com
+2025-10-17 11:08:24,870 - XMLSender.EmailService - ERROR - Erro ao enviar email: {'adrielt00@yahoo.com.br, adrielt008@gmail.com': (553, b'5.1.3 The recipient address <adrielt00@yahoo.com.br, adrielt008@gmail.com>\n5.1.3 is not a valid RFC 5321 address. For more information, go to\n5.1.3  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.1.3 specifications. 41be03b00d2f7-b6a22bb1c97sm6112773a12.32 - gsmtp')}
+2025-10-17 11:08:24,871 - XMLSender.EmailService - INFO - Tentativa 2/3 de envio para adrielt00@yahoo.com.br, adrielt008@gmail.com
+2025-10-17 11:08:27,990 - XMLSender.EmailService - ERROR - Erro ao enviar email: {'adrielt00@yahoo.com.br, adrielt008@gmail.com': (553, b'5.1.3 The recipient address <adrielt00@yahoo.com.br, adrielt008@gmail.com>\n5.1.3 is not a valid RFC 5321 address. For more information, go to\n5.1.3  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.1.3 specifications. 98e67ed59e1d1-33bb662babasm5668101a91.10 - gsmtp')}
+2025-10-17 11:08:27,990 - XMLSender.EmailService - INFO - Tentativa 3/3 de envio para adrielt00@yahoo.com.br, adrielt008@gmail.com
+2025-10-17 11:08:30,644 - XMLSender.EmailService - ERROR - Erro ao enviar email: {'adrielt00@yahoo.com.br, adrielt008@gmail.com': (553, b'5.1.3 The recipient address <adrielt00@yahoo.com.br, adrielt008@gmail.com>\n5.1.3 is not a valid RFC 5321 address. For more information, go to\n5.1.3  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.1.3 specifications. d9443c01a7336-2909930fd26sm65654235ad.5 - gsmtp')}
+2025-10-17 11:08:30,644 - XMLSender.EmailService - ERROR - Falha ao enviar email após 3 tentativas: Falha no envio (sem exceção específica)
+2025-10-17 11:08:30,649 - XMLSender.HistoryManager - INFO - Envio registrado no histórico: ID 3
+2025-10-17 11:08:30,658 - XMLSender.XMLFinder - INFO - Buscando arquivos XML para Doc ID=10199836000110, período=202510
+2025-10-17 11:08:30,658 - XMLSender.XMLFinder - INFO - Verificando caminho NFCe: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFCe\202510\Autorizados
+2025-10-17 11:08:30,659 - XMLSender.XMLFinder - INFO - Arquivos XML encontrados em C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFCe\202510\Autorizados: ['15250919359762000107650010000005591725125490-NFe.xml']
+2025-10-17 11:08:30,659 - XMLSender.XMLFinder - INFO - Encontrados 1 arquivos NFCe
+2025-10-17 11:08:30,661 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NF-e\202510\Autorizados
+2025-10-17 11:08:30,661 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFe\202510\Autorizados
+2025-10-17 11:08:30,661 - XMLSender.XMLFinder - INFO - Arquivos XML encontrados em C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFe\202510\Autorizados: ['15250919359762000107650010000005591725125490-NFe.xml']
+2025-10-17 11:08:30,661 - XMLSender.XMLFinder - INFO - Encontrados 1 arquivos NFe em C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFe\202510\Autorizados
+2025-10-17 11:08:30,666 - XMLSender.ZipService - INFO - Adicionando 1 arquivos NFCe na pasta NFCe/
+2025-10-17 11:08:30,667 - XMLSender.ZipService - INFO - Adicionando 1 arquivos NFe na pasta NFe/
+2025-10-17 11:08:30,668 - XMLSender.ZipService - INFO - Arquivo ZIP organizado criado em temp/10199836000110_202510_xmls.zip com 2 arquivos
+2025-10-17 11:08:30,678 - XMLSender.ZipService - INFO - 📦 Estrutura do ZIP (2 arquivos total):
+2025-10-17 11:08:30,679 - XMLSender.ZipService - INFO -   📁 NFCe/ (1 arquivos)
+2025-10-17 11:08:30,679 - XMLSender.ZipService - INFO -     📄 15250919359762000107650010000005591725125490-NFe.xml
+2025-10-17 11:08:30,679 - XMLSender.ZipService - INFO -   📁 NFe/ (1 arquivos)
+2025-10-17 11:08:30,679 - XMLSender.ZipService - INFO -     📄 15250919359762000107650010000005591725125490-NFe.xml
+2025-10-17 11:08:30,688 - XMLSender.EmailService - INFO - Tentativa 1/3 de envio para adrielt00@yahoo.com.br, adrielt008@gmail.com
+2025-10-17 11:08:33,624 - XMLSender.EmailService - ERROR - Erro ao enviar email: {'adrielt00@yahoo.com.br, adrielt008@gmail.com': (553, b'5.1.3 The recipient address <adrielt00@yahoo.com.br, adrielt008@gmail.com>\n5.1.3 is not a valid RFC 5321 address. For more information, go to\n5.1.3  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.1.3 specifications. 98e67ed59e1d1-33d422e081asm672750a91.1 - gsmtp')}
+2025-10-17 11:08:33,624 - XMLSender.EmailService - INFO - Tentativa 2/3 de envio para adrielt00@yahoo.com.br, adrielt008@gmail.com
+2025-10-17 11:08:36,590 - XMLSender.EmailService - ERROR - Erro ao enviar email: {'adrielt00@yahoo.com.br, adrielt008@gmail.com': (553, b'5.1.3 The recipient address <adrielt00@yahoo.com.br, adrielt008@gmail.com>\n5.1.3 is not a valid RFC 5321 address. For more information, go to\n5.1.3  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.1.3 specifications. 98e67ed59e1d1-33bd79c9664sm3063168a91.6 - gsmtp')}
+2025-10-17 11:08:36,591 - XMLSender.EmailService - INFO - Tentativa 3/3 de envio para adrielt00@yahoo.com.br, adrielt008@gmail.com
+2025-10-17 11:08:39,590 - XMLSender.EmailService - ERROR - Erro ao enviar email: {'adrielt00@yahoo.com.br, adrielt008@gmail.com': (553, b'5.1.3 The recipient address <adrielt00@yahoo.com.br, adrielt008@gmail.com>\n5.1.3 is not a valid RFC 5321 address. For more information, go to\n5.1.3  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.1.3 specifications. d2e1a72fcca58-7992d09659esm26289835b3a.45 - gsmtp')}
+2025-10-17 11:08:39,590 - XMLSender.EmailService - ERROR - Falha ao enviar email após 3 tentativas: Falha no envio (sem exceção específica)
+2025-10-17 11:08:39,599 - XMLSender.HistoryManager - INFO - Envio registrado no histórico: ID 4
+2025-10-17 11:09:43,666 - XMLSender - INFO - Iniciando processo de encerramento da aplicação
+2025-10-17 11:09:43,667 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-17 11:09:43,667 - XMLSender - INFO - Configurações salvas com sucesso
+2025-10-17 11:09:43,668 - XMLSender - INFO - Aplicação encerrada
+2025-10-17 11:09:44,100 - XMLSender - INFO - Iniciando aplicação Envio de Arquivos XML v1.0.0
+2025-10-17 11:09:44,102 - XMLSender.ConfigManager - INFO - Configurações carregadas de config/settings.json
+2025-10-17 11:09:44,187 - XMLSender - INFO - Ícone da aplicação carregado: assets/icon.ico
+2025-10-17 11:09:44,188 - XMLSender.HistoryManager - INFO - Banco de dados inicializado: data/history.db
+2025-10-17 11:09:44,707 - XMLSender - INFO - Aplicação iniciada com sucesso
+2025-10-17 11:09:48,711 - XMLSender - INFO - Iniciando processo de encerramento da aplicação
+2025-10-17 11:09:48,712 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-17 11:09:48,712 - XMLSender - INFO - Configurações salvas com sucesso
+2025-10-17 11:09:48,712 - XMLSender - INFO - Aplicação encerrada
+2025-10-17 11:12:46,479 - XMLSender - INFO - Iniciando aplicação Envio de Arquivos XML v1.0.0
+2025-10-17 11:12:46,480 - XMLSender.ConfigManager - INFO - Configurações carregadas de config/settings.json
+2025-10-17 11:12:46,555 - XMLSender - INFO - Ícone da aplicação carregado: assets/icon.ico
+2025-10-17 11:12:46,556 - XMLSender.HistoryManager - INFO - Banco de dados inicializado: data/history.db
+2025-10-17 11:12:47,007 - XMLSender - INFO - Aplicação iniciada com sucesso
+2025-10-17 11:14:38,184 - XMLSender - INFO - Iniciando processo de encerramento da aplicação
+2025-10-17 11:14:38,185 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-17 11:14:38,185 - XMLSender - INFO - Configurações salvas com sucesso
+2025-10-17 11:14:38,185 - XMLSender - INFO - Aplicação encerrada
+2025-10-17 11:14:38,595 - XMLSender - INFO - Iniciando aplicação Envio de Arquivos XML v1.0.0
+2025-10-17 11:14:38,596 - XMLSender.ConfigManager - INFO - Configurações carregadas de config/settings.json
+2025-10-17 11:14:38,659 - XMLSender - INFO - Ícone da aplicação carregado: assets/icon.ico
+2025-10-17 11:14:38,660 - XMLSender.HistoryManager - INFO - Banco de dados inicializado: data/history.db
+2025-10-17 11:14:39,180 - XMLSender - INFO - Aplicação iniciada com sucesso
+2025-10-17 11:14:57,098 - XMLSender - INFO - Iniciando processo de encerramento da aplicação
+2025-10-17 11:14:57,099 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-17 11:14:57,099 - XMLSender - INFO - Configurações salvas com sucesso
+2025-10-17 11:14:57,099 - XMLSender - INFO - Aplicação encerrada
+2025-10-17 11:15:09,860 - XMLSender - INFO - Iniciando aplicação Envio de Arquivos XML v1.0.0
+2025-10-17 11:15:09,860 - XMLSender.ConfigManager - INFO - Configurações carregadas de config/settings.json
+2025-10-17 11:15:09,934 - XMLSender - INFO - Ícone da aplicação carregado: assets/icon.ico
+2025-10-17 11:15:09,936 - XMLSender.HistoryManager - INFO - Banco de dados inicializado: data/history.db
+2025-10-17 11:15:10,381 - XMLSender - INFO - Aplicação iniciada com sucesso
+2025-10-17 11:15:50,774 - XMLSender.XMLFinder - INFO - Buscando arquivos XML para Doc ID=10199836000110, período=202510
+2025-10-17 11:15:50,775 - XMLSender.XMLFinder - INFO - Verificando caminho NFCe: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFCe\202510\Autorizados
+2025-10-17 11:15:50,775 - XMLSender.XMLFinder - INFO - Arquivos XML encontrados em C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFCe\202510\Autorizados: ['15250919359762000107650010000005591725125490-NFe.xml']
+2025-10-17 11:15:50,775 - XMLSender.XMLFinder - INFO - Encontrados 1 arquivos NFCe
+2025-10-17 11:15:50,775 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NF-e\202510\Autorizados
+2025-10-17 11:15:50,776 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFe\202510\Autorizados
+2025-10-17 11:15:50,776 - XMLSender.XMLFinder - INFO - Arquivos XML encontrados em C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFe\202510\Autorizados: ['15250919359762000107650010000005591725125490-NFe.xml']
+2025-10-17 11:15:50,776 - XMLSender.XMLFinder - INFO - Encontrados 1 arquivos NFe em C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFe\202510\Autorizados
+2025-10-17 11:15:50,779 - XMLSender.ZipService - INFO - Adicionando 1 arquivos NFCe na pasta NFCe/
+2025-10-17 11:15:50,780 - XMLSender.ZipService - INFO - Adicionando 1 arquivos NFe na pasta NFe/
+2025-10-17 11:15:50,781 - XMLSender.ZipService - INFO - Arquivo ZIP organizado criado em temp/10199836000110_202510_xmls.zip com 2 arquivos
+2025-10-17 11:15:50,795 - XMLSender.ZipService - INFO - 📦 Estrutura do ZIP (2 arquivos total):
+2025-10-17 11:15:50,795 - XMLSender.ZipService - INFO -   📁 NFCe/ (1 arquivos)
+2025-10-17 11:15:50,795 - XMLSender.ZipService - INFO -     📄 15250919359762000107650010000005591725125490-NFe.xml
+2025-10-17 11:15:50,795 - XMLSender.ZipService - INFO -   📁 NFe/ (1 arquivos)
+2025-10-17 11:15:50,795 - XMLSender.ZipService - INFO -     📄 15250919359762000107650010000005591725125490-NFe.xml
+2025-10-17 11:15:50,805 - XMLSender.EmailService - INFO - Tentativa 1/3 de envio para adrielt008@gmail.com, adrielt00@yahoo.com.br
+2025-10-17 11:15:55,937 - XMLSender.EmailService - INFO - Email enviado com sucesso para adrielt008@gmail.com, adrielt00@yahoo.com.br
+2025-10-17 11:15:55,937 - XMLSender.EmailService - INFO - Email enviado com sucesso na tentativa 1
+2025-10-17 11:15:55,943 - XMLSender.HistoryManager - INFO - Envio registrado no histórico: ID 5
+2025-10-17 11:16:02,234 - XMLSender - INFO - Iniciando processo de encerramento da aplicação
+2025-10-17 11:16:02,235 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-17 11:16:02,235 - XMLSender - INFO - Configurações salvas com sucesso
+2025-10-17 11:16:02,235 - XMLSender - INFO - Aplicação encerrada
+2025-10-17 11:24:37,133 - XMLSender - INFO - Iniciando aplicação Envio de Arquivos XML v1.0.0
+2025-10-17 11:24:37,134 - XMLSender.ConfigManager - INFO - Configurações carregadas de config/settings.json
+2025-10-17 11:24:37,206 - XMLSender - INFO - Ícone da aplicação carregado: assets/icon.ico
+2025-10-17 11:24:37,207 - XMLSender.HistoryManager - INFO - Banco de dados inicializado: data/history.db
+2025-10-17 11:24:37,671 - XMLSender - INFO - Aplicação iniciada com sucesso
+2025-10-17 11:24:40,674 - XMLSender - WARNING - Erro ao verificar atualizações na inicialização: No module named 'requests'
+2025-10-17 11:25:00,837 - XMLSender - INFO - Iniciando processo de encerramento da aplicação
+2025-10-17 11:25:00,838 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-17 11:25:00,838 - XMLSender - INFO - Configurações salvas com sucesso
+2025-10-17 11:25:00,838 - XMLSender - INFO - Aplicação encerrada
+2025-10-17 11:25:24,591 - XMLSender - INFO - Iniciando aplicação Envio de Arquivos XML v1.0.0
+2025-10-17 11:25:24,592 - XMLSender.ConfigManager - INFO - Configurações carregadas de config/settings.json
+2025-10-17 11:25:24,667 - XMLSender - INFO - Ícone da aplicação carregado: assets/icon.ico
+2025-10-17 11:25:24,669 - XMLSender.HistoryManager - INFO - Banco de dados inicializado: data/history.db
+2025-10-17 11:25:25,133 - XMLSender - INFO - Aplicação iniciada com sucesso
+2025-10-17 11:25:28,137 - XMLSender - WARNING - Erro ao verificar atualizações na inicialização: No module named 'requests'
+2025-10-17 11:25:46,002 - XMLSender - INFO - Iniciando processo de encerramento da aplicação
+2025-10-17 11:25:46,003 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-17 11:25:46,003 - XMLSender - INFO - Configurações salvas com sucesso
+2025-10-17 11:25:46,003 - XMLSender - INFO - Aplicação encerrada
+2025-10-17 11:26:15,923 - XMLSender - INFO - Iniciando aplicação Envio de Arquivos XML v1.0.0
+2025-10-17 11:26:15,924 - XMLSender.ConfigManager - INFO - Configurações carregadas de config/settings.json
+2025-10-17 11:26:15,996 - XMLSender - INFO - Ícone da aplicação carregado: assets/icon.ico
+2025-10-17 11:26:15,998 - XMLSender.HistoryManager - INFO - Banco de dados inicializado: data/history.db
+2025-10-17 11:26:16,469 - XMLSender - INFO - Aplicação iniciada com sucesso
+2025-10-17 11:26:20,777 - XMLSender.UpdateChecker - INFO - Verificando atualizações... (versão atual: 1.0.0)
+2025-10-17 11:26:20,785 - XMLSender.UpdateChecker - INFO - Verificando atualizações... (versão atual: 1.0.0)
+2025-10-17 11:26:21,654 - XMLSender.UpdateChecker - INFO - Nenhum release encontrado no repositório
+2025-10-17 11:26:21,654 - XMLSender.UpdateChecker - INFO - Nenhum release encontrado no repositório
+2025-10-17 11:26:30,572 - XMLSender - INFO - Iniciando processo de encerramento da aplicação
+2025-10-17 11:26:30,573 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-17 11:26:30,573 - XMLSender - INFO - Configurações salvas com sucesso
+2025-10-17 11:26:30,573 - XMLSender - INFO - Aplicação encerrada
+2025-10-17 11:40:07,975 - XMLSender - INFO - Iniciando aplicação Envio de Arquivos XML v1.0.0
+2025-10-17 11:40:07,975 - XMLSender.ConfigManager - INFO - Configurações carregadas de config/settings.json
+2025-10-17 11:40:08,051 - XMLSender - INFO - Ícone da aplicação carregado: assets/icon.ico
+2025-10-17 11:40:08,052 - XMLSender.HistoryManager - INFO - Banco de dados inicializado: data/history.db
+2025-10-17 11:40:08,582 - XMLSender - INFO - Aplicação iniciada com sucesso
+2025-10-17 11:40:11,657 - XMLSender.UpdateChecker - INFO - Verificando atualizações... (versão atual: 1.0.0)
+2025-10-17 11:40:12,536 - XMLSender.UpdateChecker - INFO - Nenhum release encontrado no repositório
+2025-10-17 11:40:18,268 - XMLSender.EmailService - INFO - Teste de conexão SMTP realizado com sucesso
+2025-10-17 11:40:27,309 - XMLSender - INFO - Iniciando processo de encerramento da aplicação
+2025-10-17 11:40:27,311 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-17 11:40:27,311 - XMLSender - INFO - Configurações salvas com sucesso
+2025-10-17 11:40:27,311 - XMLSender - INFO - Aplicação encerrada
