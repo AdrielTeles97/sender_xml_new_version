@@ -2,8 +2,8 @@
     "smtp": {
         "server": "smtp.gmail.com",
         "port": 587,
-        "username": "",
-        "password": "",
+        "username": "belinformatica2019@gmail.com",
+        "password": "ztkn jhra empm qbhk",
         "use_ssl": false
     },
     "cnpj": "19359762000107",

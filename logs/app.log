@@ -1038,3 +1038,80 @@
 2025-10-17 11:40:27,311 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
 2025-10-17 11:40:27,311 - XMLSender - INFO - Configurações salvas com sucesso
 2025-10-17 11:40:27,311 - XMLSender - INFO - Aplicação encerrada
+2025-10-17 11:50:02,608 - XMLSender - INFO - Iniciando aplicação Envio de Arquivos XML v1.0.0
+2025-10-17 11:50:02,609 - XMLSender.ConfigManager - INFO - Configurações carregadas de config/settings.json
+2025-10-17 11:50:02,684 - XMLSender - INFO - Ícone da aplicação carregado: assets/icon.ico
+2025-10-17 11:50:02,686 - XMLSender.HistoryManager - INFO - Banco de dados inicializado: data/history.db
+2025-10-17 11:50:03,157 - XMLSender.EnvConfig - INFO - Variáveis de ambiente carregadas de .env
+2025-10-17 11:50:03,157 - XMLSender - INFO - Aplicação iniciada com sucesso
+2025-10-17 11:50:06,239 - XMLSender.UpdateChecker - INFO - Verificando atualizações... (versão atual: 1.0.0)
+2025-10-17 11:50:06,922 - XMLSender.UpdateChecker - INFO - Nenhum release encontrado no repositório
+2025-10-17 11:52:11,320 - XMLSender - INFO - Iniciando processo de encerramento da aplicação
+2025-10-17 11:52:11,321 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-17 11:52:11,322 - XMLSender - INFO - Configurações salvas com sucesso
+2025-10-17 11:52:11,322 - XMLSender - INFO - Aplicação encerrada
+2025-10-17 11:52:26,287 - XMLSender - INFO - Iniciando aplicação Envio de Arquivos XML v1.0.0
+2025-10-17 11:52:26,288 - XMLSender.ConfigManager - INFO - Configurações carregadas de config/settings.json
+2025-10-17 11:52:26,362 - XMLSender - INFO - Ícone da aplicação carregado: assets/icon.ico
+2025-10-17 11:52:26,364 - XMLSender.HistoryManager - INFO - Banco de dados inicializado: data/history.db
+2025-10-17 11:52:26,850 - XMLSender.EnvConfig - INFO - Variáveis de ambiente carregadas de .env
+2025-10-17 11:52:26,851 - XMLSender - INFO - Aplicação iniciada com sucesso
+2025-10-17 11:52:28,699 - XMLSender.EnvConfig - INFO - Variáveis de ambiente carregadas de .env
+2025-10-17 11:52:28,699 - XMLSender.SettingsWindow - INFO - Credenciais carregadas do arquivo .env
+2025-10-17 11:52:29,935 - XMLSender.UpdateChecker - INFO - Verificando atualizações... (versão atual: 1.0.0)
+2025-10-17 11:52:30,671 - XMLSender.UpdateChecker - INFO - Nenhum release encontrado no repositório
+2025-10-17 11:52:31,019 - XMLSender - INFO - Iniciando processo de encerramento da aplicação
+2025-10-17 11:52:31,020 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-17 11:52:31,020 - XMLSender - INFO - Configurações salvas com sucesso
+2025-10-17 11:52:31,020 - XMLSender - INFO - Aplicação encerrada
+2025-10-17 11:53:22,370 - XMLSender - INFO - Iniciando aplicação Envio de Arquivos XML v1.0.0
+2025-10-17 11:53:22,371 - XMLSender.ConfigManager - INFO - Configurações carregadas de config/settings.json
+2025-10-17 11:53:22,494 - XMLSender - INFO - Ícone da aplicação carregado: assets/icon.ico
+2025-10-17 11:53:22,496 - XMLSender.HistoryManager - INFO - Banco de dados inicializado: data/history.db
+2025-10-17 11:53:22,993 - XMLSender.EnvConfig - INFO - Variáveis de ambiente carregadas de .env
+2025-10-17 11:53:22,993 - XMLSender - INFO - Aplicação iniciada com sucesso
+2025-10-17 11:53:26,085 - XMLSender.UpdateChecker - INFO - Verificando atualizações... (versão atual: 1.0.0)
+2025-10-17 11:53:26,187 - XMLSender.EnvConfig - INFO - Variáveis de ambiente carregadas de .env
+2025-10-17 11:53:26,188 - XMLSender.SettingsWindow - INFO - Credenciais carregadas do arquivo .env
+2025-10-17 11:53:26,821 - XMLSender.UpdateChecker - INFO - Nenhum release encontrado no repositório
+2025-10-17 11:53:30,061 - XMLSender - INFO - Iniciando processo de encerramento da aplicação
+2025-10-17 11:53:30,062 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-17 11:53:30,062 - XMLSender - INFO - Configurações salvas com sucesso
+2025-10-17 11:53:30,062 - XMLSender - INFO - Aplicação encerrada
+2025-10-17 13:43:33,472 - XMLSender - INFO - Iniciando aplicação Envio de Arquivos XML v1.0.0
+2025-10-17 13:43:33,483 - XMLSender.ConfigManager - INFO - Configurações carregadas de config/settings.json
+2025-10-17 13:43:33,949 - XMLSender - INFO - Ícone da aplicação carregado: assets/icon.ico
+2025-10-17 13:43:33,961 - XMLSender.HistoryManager - INFO - Banco de dados inicializado: data/history.db
+2025-10-17 13:43:34,664 - XMLSender.EnvConfig - INFO - Variáveis de ambiente carregadas de .env
+2025-10-17 13:43:34,664 - XMLSender - INFO - Aplicação iniciada com sucesso
+2025-10-17 13:43:37,908 - XMLSender.UpdateChecker - INFO - Verificando atualizações... (versão atual: 1.0.0)
+2025-10-17 13:43:38,699 - XMLSender.UpdateChecker - INFO - Nenhum release encontrado no repositório
+2025-10-17 13:44:15,698 - XMLSender.EnvConfig - INFO - Variáveis de ambiente carregadas de .env
+2025-10-17 13:44:15,699 - XMLSender.SettingsWindow - INFO - Credenciais carregadas do arquivo .env
+2025-10-17 13:44:20,354 - XMLSender.EmailService - INFO - Teste de conexão SMTP realizado com sucesso
+2025-10-17 13:44:21,668 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-17 13:44:27,022 - XMLSender.XMLFinder - INFO - Buscando arquivos XML para Doc ID=10199836000110, período=202510
+2025-10-17 13:44:27,023 - XMLSender.XMLFinder - INFO - Verificando caminho NFCe: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFCe\202510\Autorizados
+2025-10-17 13:44:27,024 - XMLSender.XMLFinder - INFO - Arquivos XML encontrados em C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFCe\202510\Autorizados: ['15250919359762000107650010000005591725125490-NFe.xml']
+2025-10-17 13:44:27,024 - XMLSender.XMLFinder - INFO - Encontrados 1 arquivos NFCe
+2025-10-17 13:44:27,024 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NF-e\202510\Autorizados
+2025-10-17 13:44:27,025 - XMLSender.XMLFinder - INFO - Tentando caminho NFe: C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFe\202510\Autorizados
+2025-10-17 13:44:27,025 - XMLSender.XMLFinder - INFO - Arquivos XML encontrados em C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFe\202510\Autorizados: ['15250919359762000107650010000005591725125490-NFe.xml']
+2025-10-17 13:44:27,025 - XMLSender.XMLFinder - INFO - Encontrados 1 arquivos NFe em C:\DigiSat\SuiteG6\Servidor\DFe\10199836000110\Enviado\NFe\202510\Autorizados
+2025-10-17 13:44:27,028 - XMLSender.ZipService - INFO - Adicionando 1 arquivos NFCe na pasta NFCe/
+2025-10-17 13:44:27,043 - XMLSender.ZipService - INFO - Adicionando 1 arquivos NFe na pasta NFe/
+2025-10-17 13:44:27,046 - XMLSender.ZipService - INFO - Arquivo ZIP organizado criado em temp/10199836000110_202510_xmls.zip com 2 arquivos
+2025-10-17 13:44:27,058 - XMLSender.ZipService - INFO - 📦 Estrutura do ZIP (2 arquivos total):
+2025-10-17 13:44:27,059 - XMLSender.ZipService - INFO -   📁 NFCe/ (1 arquivos)
+2025-10-17 13:44:27,059 - XMLSender.ZipService - INFO -     📄 15250919359762000107650010000005591725125490-NFe.xml
+2025-10-17 13:44:27,059 - XMLSender.ZipService - INFO -   📁 NFe/ (1 arquivos)
+2025-10-17 13:44:27,059 - XMLSender.ZipService - INFO -     📄 15250919359762000107650010000005591725125490-NFe.xml
+2025-10-17 13:44:27,064 - XMLSender.EmailService - INFO - Tentativa 1/3 de envio para adrielt00@yahoo.com.br
+2025-10-17 13:44:32,239 - XMLSender.EmailService - INFO - Email enviado com sucesso para adrielt00@yahoo.com.br
+2025-10-17 13:44:32,239 - XMLSender.EmailService - INFO - Email enviado com sucesso na tentativa 1
+2025-10-17 13:44:32,245 - XMLSender.HistoryManager - INFO - Envio registrado no histórico: ID 6
+2025-10-17 13:44:41,007 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-17 13:55:41,067 - XMLSender - INFO - Iniciando processo de encerramento da aplicação
+2025-10-17 13:55:41,068 - XMLSender.ConfigManager - INFO - Configurações salvas em config/settings.json
+2025-10-17 13:55:41,068 - XMLSender - INFO - Configurações salvas com sucesso
+2025-10-17 13:55:41,069 - XMLSender - INFO - Aplicação encerrada
